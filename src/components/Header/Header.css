@@ -1,0 +1,145 @@
+.header__nav1 {
+  width: 100%;
+  height: 95px;
+
+  background: #2d2d2d;
+}
+.header__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+.header__nav1__ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.header__nav1__ul a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.link_logo {
+  padding: 10px 0;
+}
+.link_item {
+  padding: 30px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.link_item2 {
+  display: flex;
+  padding: 40px 0;
+  gap: 6px;
+}
+.link_item2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.link_item2 p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.link_item3 {
+  display: flex;
+  gap: 2px;
+}
+
+.link_item3 img {
+  width: 25px;
+  height: 35px;
+}
+
+.link_item4 button {
+  width: 205px;
+  height: 43px;
+
+  background: transparent;
+  border: 2px solid #ffbf1d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.link_item5 {
+  padding: 25px 0;
+}
+
+.link_item5 a {
+  display: flex;
+  gap: 15px;
+}
+
+.header__nav2 {
+  width: 100%;
+  height: 76px;
+
+  background: #f3f3f3;
+}
+
+.nav2__buttonIn {
+  width: 300px;
+  position: relative;
+}
+
+.nav2__input {
+  width: 270px;
+  height: 30px;
+
+  border: 1px solid rgba(45, 45, 45, 0.6);
+  outline: none;
+  padding-left: 10px;
+  background: transparent;
+}
+
+.nav2__input__btn {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+}
+
+.nav2__parent {
+  display: flex;
+  justify-content: space-between;
+  height: 76px;
+  align-items: center;
+}
+
+.header__nav2__ul {
+  width: 60%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav2__ul_link a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* @media all and (max-width: 1216px) {
+  .header__nav1__ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .link_item2,
+  .link_item3,
+  .link_item4 {
+    display: none;
+  }
+} */
