@@ -1,0 +1,12 @@
+.footer__container {
+    width: 1180px;
+    margin: 0 auto;
+    font-family: "Montserrat";
+}
+footer {
+    width: 100%;
+    height: max-content;
+    padding: 40px;
+
+    background: #2D2D2D;
+}
