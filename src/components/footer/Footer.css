@@ -6,7 +6,49 @@
 footer {
     width: 100%;
     height: max-content;
-    padding: 40px;
+    padding: 50px;
 
     background: #2D2D2D;
 }
+
+footer ul li {
+    color: #fff;
+    cursor: pointer;   
+    font-size: 12px;
+}
+
+.footer__parent {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+}
+
+.footer__ul5__btn{
+    width: 170px;
+    height: 43px;
+
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+}
+
+.footer__ul5__btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.footer__ul5 li {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    gap: 7px;
+}
+
+.footer__li__title{
+    padding-bottom: 10px;
+}
+
