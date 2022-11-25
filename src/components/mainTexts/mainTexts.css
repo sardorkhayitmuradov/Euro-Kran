@@ -1,0 +1,26 @@
+.main__texts {
+  background: #e5e5e5;
+  width: 100%;
+  height: max-content;
+}
+
+.main__texts__container {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 70px 0;
+  font-family: 'Montserrat';
+}
+
+.main__text__labelh1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.main__text__labelp {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2D2D2D;
+    padding: 40px 0;
+    line-height: 25px;
+}
