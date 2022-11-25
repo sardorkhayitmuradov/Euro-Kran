@@ -6,8 +6,7 @@
 footer {
     width: 100%;
     height: max-content;
-    padding: 50px;
-
+    padding: 60px 0;
     background: #2D2D2D;
 }
 
@@ -41,14 +40,28 @@ footer ul li {
 }
 
 .footer__ul5 li {
-    width: 22px;
-    height: 22px;
+    width: 33px;
+    height: 31px;
 
     display: flex;
     gap: 7px;
 }
 
 .footer__li__title{
+    padding-bottom: 5px;
+}
+
+.footer__ul1 li,
+.footer__ul2 li,
+.footer__ul3 li,
+.footer__ul4 li,
+.footer__ul5 li,
+.footer__ul6 li{
     padding-bottom: 10px;
+}
+
+.footer__li__title {
+    font-size: 13px;
+    font-weight: 700;
 }
 

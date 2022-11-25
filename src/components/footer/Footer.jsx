@@ -55,7 +55,7 @@ const Footer = () => {
                 <img src={yandex} alt="Yandex" />
               </li>
             </ul>
-            <ul className="">
+            <ul className="footer__ul6">
               <li className="footer__li__title">Контакты</li>
               <li>+7 (499)929-96-66</li>
               <li>+7 (985)364-55-18</li>
