@@ -1,0 +1,99 @@
+.main__aside {
+  background: #2d2d2d;
+  width: 100%;
+  height: max-content;
+}
+
+.aside__container {
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+
+.aside__grid__parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.aside__grid__left {
+  padding-left: 23%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__form__input {
+  width: 490px;
+  height: 50px;
+
+  background: transparent;
+  border: 1px solid #c4c4c4;
+  padding: 0 20px;
+  outline: none;
+  color: #fff;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.aside__form textarea {
+  padding-top: 20px;
+  height: 100px;
+  resize: none;
+}
+
+.aside__form__check__div {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.aside__form__check {
+  width: 20px;
+  height: 20px;
+
+  margin-right: 10px;
+}
+
+.aside__form__check__div label {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.aside__form__btn {
+  width: 490px;
+  height: 50px;
+
+  border: 2px solid #fcb427;
+  background: #fcb427;
+  color: #fff;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.aside__form__btn:hover {
+  background: #fff;
+  color: #fcb427;
+}
+
+.aside__grid__left__h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 142.19%;
+
+  color: #ffffff;
+}
+
+.aside__grid__left__p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 156.69%;
+  padding-top: 20px;
+
+  color: #ffffff;
+}
+
