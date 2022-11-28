@@ -1,0 +1,77 @@
+.order__call__sect {
+  width: 100%;
+  height: 60vh;
+
+  background: url("../../assets/images/mobikran.jpg") no-repeat center
+    center/cover;
+  border-top: 25px solid #fcd127;
+  border-bottom: 25px solid #fcd127;
+  font-family: "Montserrat";
+}
+
+.order__call__container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.order__call__label {
+  font-weight: 700;
+  font-size: 33px;
+  padding: 70px 0;
+}
+
+.order__call__label span {
+  color: #fcb427;
+}
+
+.order__call__input {
+  width: 300px;
+  height: 50px;
+
+  background: #ffffff;
+  border: 1px solid #535554;
+  padding-left: 20px;
+}
+
+.order__call__input:focus{
+       outline: #fcb427 3px solid;
+       border: none;
+}
+
+.order__form__inp2{
+       margin: 0 30px;
+}
+
+.order__call__btn {
+       width: 300px;
+       height: 50px;
+
+       background: #fcb427;
+       border: #fcb427 2px solid;
+       color: #fff;
+       font-size: 18px;
+       font-weight: 700;
+}
+
+.order__call__btn:hover {
+       background: #fff;
+       color: #fcb427;
+}
+
+.order__check__div {
+       height: 30px;
+       padding-top: 60px;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+}
+
+.order__call__check{
+       width: 20px;
+       height: 20px;
+}
+
+.order__check__div label {
+       font-weight: 300;
+       font-size: 14px;
+}

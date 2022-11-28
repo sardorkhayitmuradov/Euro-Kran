@@ -1,0 +1,40 @@
+.uslugi__container {
+       width:1180px;
+       margin:0 auto;
+       padding: 60px 0;
+       font-family: 'Montserrat';
+}
+
+.uslugi__label{
+       font-size: 40px;
+       font-weight: 700;
+       color: #2D2D2D;
+}
+
+.uslugi__parent{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       gap: 30px;
+}
+
+.uslugi__card {
+       width: 369px;
+       height: 430px;
+       cursor: pointer;
+}
+
+.uslugi__card p {
+       height: 70px;
+
+       padding: 12px;
+       font-size: 18px;
+       font-weight: 700;
+       text-align: center;
+       color: #fff;
+       background: #FCB427;
+}
+
+.uslugi__card img {
+       width: 100%;
+       object-fit: cover;
+}

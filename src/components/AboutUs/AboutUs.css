@@ -1,0 +1,39 @@
+.about__us__sect{
+       height: max-content;
+       margin: 0 auto;
+       padding: 100px 0;
+       background: #E5E5E5;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 20px;
+       font-family: "Montserrat";
+}
+
+.about__us__card1 {
+       width: 250px;
+}
+
+.about__us__card1 h1{
+       transform: rotate(-90deg);
+       font-weight: 700;
+       font-size: 155px;
+       color: #D3D0D033;
+       position: relative;
+       top: 65%;
+}
+
+
+.about__us__card2 {
+       display: flex;
+}
+
+.about__contents h2{
+       font-size: 40px;
+       font-weight: 700;
+       color: #2d2d2d;
+       padding: 50px 0;
+}
+
+.about__us__card3 img {
+       width: 100%;
+}
