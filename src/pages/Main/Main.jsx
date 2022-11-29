@@ -7,12 +7,14 @@ import MainTexts from '../../components/mainTexts/MainTexts'
 import Uslugi from '../../components/Uslugi/Uslugi';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import OrderCall from '../../components/OrderCall/OrderCall';
+import DarkSect from '../../components/DarkSection/DarkSect'
 
 const Main = () => {
   return (
     <>
     <Header/>
 
+    <DarkSect/>
     <OrderCall/>
     <AboutUs/>
     <Uslugi/>
