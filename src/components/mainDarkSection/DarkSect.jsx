@@ -1,5 +1,5 @@
 import React from "react";
-import "../DarkSection/DarkSect.css";
+import "./DarkSect.css";
 import one from "../../assets/images/01.png";
 import two from "../../assets/images/02.png";
 import three from "../../assets/images/03.png";

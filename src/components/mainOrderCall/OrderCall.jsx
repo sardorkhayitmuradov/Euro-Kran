@@ -1,5 +1,5 @@
 import React from "react";
-import "../OrderCall/OrderCall.css";
+import "./OrderCall.css";
 import mobikran from "../../assets/images/mobikran.jpg";
 
 const OrderCall = () => {

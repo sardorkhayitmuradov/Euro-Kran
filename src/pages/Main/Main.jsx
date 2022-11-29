@@ -4,16 +4,18 @@ import Header from '../../components/Header/Header'
 import Iframe from '../../components/Iframe/Iframe'
 import MainAside from '../../components/mainAside/MainAside'
 import MainTexts from '../../components/mainTexts/MainTexts'
-import Uslugi from '../../components/Uslugi/Uslugi';
-import AboutUs from '../../components/AboutUs/AboutUs';
-import OrderCall from '../../components/OrderCall/OrderCall';
-import DarkSect from '../../components/DarkSection/DarkSect'
+import Uslugi from '../../components/mainUslugi/Uslugi';
+import AboutUs from '../../components/mainAboutUs/AboutUs';
+import OrderCall from '../../components/mainOrderCall/OrderCall';
+import DarkSect from '../../components/mainDarkSection/DarkSect'
+import CatalogTechniques from '../../components/mainCatalog/CatalogTechniques'
 
 const Main = () => {
   return (
     <>
     <Header/>
 
+    <CatalogTechniques/>
     <DarkSect/>
     <OrderCall/>
     <AboutUs/>

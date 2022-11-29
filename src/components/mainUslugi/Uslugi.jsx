@@ -1,5 +1,5 @@
 import React from "react";
-import "../Uslugi/Uslugi.css";
+import "./Uslugi.css";
 import {uslugi} from "../../dbsUslugi";
 
 const Uslugi = () => {
