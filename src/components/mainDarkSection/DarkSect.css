@@ -3,7 +3,7 @@
   height: 500px;
 
   background: #2d2d2d;
-  margin: 60px 0;
+  margin-bottom: 60px;
 }
 
 .dark__sect__img {
@@ -14,26 +14,26 @@
     center/cover;
 }
 
-.dark__sect__container{
-       width: 1180px;
-       margin: 0 auto;
-       font-family: 'Montserrat';
+.dark__sect__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
 }
 
-.dar__sect__label{
-       font-weight: 700;
-       font-size: 40px;
-       color: #fff;
-       padding-top: 60px;
+.dar__sect__label {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 60px;
 }
 
-.dark__sect__parent{
+.dark__sect__parent {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
 
-.dark__sect__card{
+.dark__sect__card {
   padding-top: 30px;
   text-align: center;
 }

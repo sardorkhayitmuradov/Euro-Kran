@@ -1,0 +1,103 @@
+.catalog__tech {
+  width: 100%;
+  height: max-content;
+
+  padding: 70px 0;
+  background: #e5e5e5;
+  font-family: "Montserrat";
+}
+
+.catalog__tech__container {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.catalog__tech__slider {
+       cursor: pointer;
+}
+
+.catalog__tech__container span {
+  color: #fcb427;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+
+.slider__card {
+  width: 350px !important;
+  height: 590px;
+
+  background: #fff;
+  margin: 0 200px;
+  font-family: "Montserrat";
+}
+
+.slider__card__twink {
+  display: flex;
+  gap: 10px;
+}
+
+.slider__card img {
+  height: 299px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__body h2 {
+  height: 90px;
+
+  font-family: "Montserrat";
+  padding: 0 35px;
+  padding-top: 10px;
+  border-bottom: 2px solid #fcd12780;
+  color: #2d2d2d;
+  font-size: 25px;
+}
+
+.slider__card__twink {
+  padding: 10px 35px;
+}
+
+.slider__card__twink p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.slider__card__btn {
+  text-align: center;
+}
+
+.slider__card__btn button {
+  width: 311px;
+  height: 50px;
+  background: #fcb427;
+  color: #fff;
+  border: 2px solid #fcb427;
+  font-size: 18px;
+  font-weight: 700;
+}
+.slider__card__btn button:active {
+  background: #fff;
+  color: #fcb427;
+}
+
+.slick-dots li button:before {
+       font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+       color: #fcb427 !important;
+}
