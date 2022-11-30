@@ -1,0 +1,68 @@
+.together__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  padding: 70px 0;
+}
+
+.together__label {
+  color: #424242;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 60px 0;
+}
+
+.together__parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.together__left {
+  width: 583px;
+}
+
+.together__left p {
+  line-height: 25.07px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d2d2d;
+}
+
+.together__left button {
+  width: 219px;
+  height: 50px;
+  background: #fcb427;
+  color: #fff;
+  border: 2px solid #fcb427;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.together__left button:hover {
+  background: #fff;
+  color: #fcb427;
+}
+
+.together__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.watch,
+.klyuch,
+.man,
+.gruz {
+  text-align: center;
+}
+
+.watch h4,
+.klyuch h4,
+.man h4,
+.gruz h4 {
+       font-weight: 500;
+       font-size: 16px;
+       color: #2d2d2d;
+       padding-top: 10px;
+}

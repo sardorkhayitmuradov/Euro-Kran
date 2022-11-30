@@ -11,12 +11,14 @@ import DarkSect from '../../components/mainDarkSection/DarkSect'
 import CatalogTechniques from '../../components/mainCatalog/CatalogTechniques'
 import RealProjects from '../../components/mainRealProjects/RealProjects'
 import DarkBlog from '../../components/mainDarkBlog/DarkBlog'
+import Together from '../../components/mainTogether/Together'
 
 const Main = () => {
   return (
     <>
     <Header/>
 
+    <Together/>
     <DarkBlog/>
     <RealProjects/>
     <CatalogTechniques/>
