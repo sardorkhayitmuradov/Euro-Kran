@@ -21,16 +21,17 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 10px !important;
+  width: 13px !important;
+  height: 10px;
   border: 1px solid #d5d5d5 !important;
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 0;
-  background: #eeeeee;
+  border-radius: 0 !important;
+  background: #eeeeee !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #9c9b9b;
+  border-radius: 7px !important;
+  background: #9c9b9b !important;
 }

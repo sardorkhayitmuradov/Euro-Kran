@@ -13,12 +13,13 @@ import RealProjects from '../../components/mainRealProjects/RealProjects'
 import DarkBlog from '../../components/mainDarkBlog/DarkBlog'
 import Together from '../../components/mainTogether/Together'
 import SpecTech from '../../components/mainSpecTech/SpecTech'
+import Hero from '../../components/mainHero/Hero'
 
 const Main = () => {
   return (
     <>
     <Header/>
-
+    <Hero/>
     <SpecTech/>
     <Together/>
     <DarkBlog/>
