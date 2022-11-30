@@ -3,8 +3,14 @@
   height: max-content;
 
   padding: 70px 0;
-  background: #e5e5e5;
+  background: #E5E5E5;
   font-family: "Montserrat";
+}
+
+.catalog__tech__label{
+  font-weight: 700;
+  font-size: 40px;
+  color: #2d2d2d;
 }
 
 .catalog__tech__container {
@@ -21,12 +27,16 @@
 }
 
 .catalog__tech__container span {
-  color: #fcb427;
+  border: 2px solid #fcb427;
+  color: #2d2d2d;
   font-weight: bold;
   font-size: 25px;
   cursor: pointer;
   display: flex;
   gap: 10px;
+  height: 40px;
+  align-items: center;
+  padding-bottom: 5px;
 }
 
 .slick-next,

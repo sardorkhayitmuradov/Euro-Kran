@@ -9,12 +9,14 @@ import AboutUs from '../../components/mainAboutUs/AboutUs';
 import OrderCall from '../../components/mainOrderCall/OrderCall';
 import DarkSect from '../../components/mainDarkSection/DarkSect'
 import CatalogTechniques from '../../components/mainCatalog/CatalogTechniques'
+import RealProjects from '../../components/mainRealProjects/RealProjects'
 
 const Main = () => {
   return (
     <>
     <Header/>
 
+    <RealProjects/>
     <CatalogTechniques/>
     <DarkSect/>
     <OrderCall/>

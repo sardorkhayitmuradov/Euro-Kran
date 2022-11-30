@@ -1,0 +1,93 @@
+.real__projects {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  padding: 70px 20px;
+}
+
+.real__projects__container {
+  width: 1180px;
+  margin: auto;
+}
+
+.real__projects__parent {
+  font-family: "Montserrat";
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+}
+
+.real__projects__label {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2d2d2d;
+  padding: 60px 0;
+}
+
+.real__projects__carousel {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  overflow-x: scroll;
+}
+
+.real__projects__carousel img {
+  width: 170px;
+  height: 137px;
+  object-fit: cover;
+}
+
+.real__projects__left img{
+       width: 100%;
+       height: 582px;
+       object-fit: cover;
+}
+
+.real__projects__right{
+       width: 544px;
+       color: #2d2d2d;
+}
+
+.right__location{
+       display: flex;
+       align-items: center;
+       gap: 15px;
+}
+
+.right__location img {
+       width: 25px;
+       height: 25px;
+}
+
+.right__location h3{
+       font-weight: 700;
+       font-size: 15px;
+}
+
+.real__projects__right p {
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 156.69%;
+}
+
+.real__projects__right__link{
+       font-weight: 700;
+       font-size: 18px;
+       color: #2d2d2d;
+}
+.real__projects__right__link span {
+       color: #FCB427 !important;
+       font-size: 25px;
+}
+
+.real__projects__back__text{
+       position: relative;
+       top: 36%;
+       left: 35%;
+       float: right;
+       text-transform: uppercase;
+       font-size: 110px;
+       font-weight: 700;
+       color: #D3D0D033;
+}

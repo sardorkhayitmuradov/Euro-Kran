@@ -20,3 +20,16 @@ code {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+ 
+body::-webkit-scrollbar-track {
+  background: none;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #6b6d6c;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
+}
