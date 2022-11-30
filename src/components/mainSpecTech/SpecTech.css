@@ -1,0 +1,74 @@
+.spec__tec__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  padding: 100px 0;
+}
+
+.spec__tec__label {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+.spec__tec__label span {
+  color: #ff971d;
+}
+
+.spec__tec__titles {
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.spec__tec__name{
+       position: relative;
+       left: 13%;
+       top: 100%;
+       color: #D3D0D033;
+       font-weight: 700;
+       font-size: 127px;
+}
+
+.spec__tec__parent {
+  height: 458px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+}
+
+.spec__tec__right {
+  width: 566px;
+}
+
+.spec__tec__right h2 {
+  font-weight: 700;
+  font-size: 33px;
+  color: #2d2d2d;
+}
+
+.spec__tec__right p {
+  padding: 40px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d2d2d;
+  line-height: 25.07px;
+}
+
+.spec__tec__right button {
+  width: 219px;
+  height: 50px;
+  background: #fcb427;
+  color: #fff;
+  border: 2px solid #fcb427;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.spec__tec__right button:hover {
+  background: #fff;
+  color: #fcb427;
+}

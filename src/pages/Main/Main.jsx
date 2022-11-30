@@ -12,12 +12,14 @@ import CatalogTechniques from '../../components/mainCatalog/CatalogTechniques'
 import RealProjects from '../../components/mainRealProjects/RealProjects'
 import DarkBlog from '../../components/mainDarkBlog/DarkBlog'
 import Together from '../../components/mainTogether/Together'
+import SpecTech from '../../components/mainSpecTech/SpecTech'
 
 const Main = () => {
   return (
     <>
     <Header/>
 
+    <SpecTech/>
     <Together/>
     <DarkBlog/>
     <RealProjects/>

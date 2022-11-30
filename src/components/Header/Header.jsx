@@ -4,10 +4,16 @@ import logo from "../../assets/images/logo.svg";
 import clock from "../../assets/images/clock.svg";
 import location from "../../assets/images/location.svg";
 import call from "../../assets/images/call.svg";
-import search from '../../assets/images/search.svg';
+import search from "../../assets/images/search.svg";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <header>
@@ -58,37 +64,37 @@ const Header = () => {
         </nav>
         <nav className="header__nav2">
           <div className="header__container">
-           <div className="nav2__parent">
-           <ul className="header__nav2__ul">
-              <li className="nav2__ul_link nav__ul__link1">
-                <NavLink>Каталог</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link2">
-                <NavLink>Услуги</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link3">
-                <NavLink>О компании</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link4">
-                <NavLink>Объекты</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link5">
-                <NavLink>Цены</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link6">
-                <NavLink>Блог</NavLink>
-              </li>
-              <li className="nav2__ul_link nav__ul__link7">
-                <NavLink>Контакты</NavLink>
-              </li>
-            </ul>
-            <div className="nav2__buttonIn">
-              <input className="nav2__input" type="text" id="enter" />
-              <button className="nav2__input__btn" id="clear">
-                <img src={search} alt="Search" />
-              </button>
+            <div className="nav2__parent">
+              <ul className="header__nav2__ul">
+                <li className="nav2__ul_link nav__ul__link1">
+                  <NavLink>Каталог</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link2">
+                  <NavLink>Услуги</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link3">
+                  <NavLink>О компании</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link4">
+                  <NavLink>Объекты</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link5">
+                  <NavLink>Цены</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link6">
+                  <NavLink>Блог</NavLink>
+                </li>
+                <li className="nav2__ul_link nav__ul__link7">
+                  <NavLink>Контакты</NavLink>
+                </li>
+              </ul>
+              <div className="nav2__buttonIn">
+                <input className="nav2__input" type="text" id="enter" />
+                <button className="nav2__input__btn" id="clear">
+                  <img src={search} alt="Search" />
+                </button>
+              </div>
             </div>
-           </div>
           </div>
         </nav>
       </header>

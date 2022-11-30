@@ -4,6 +4,7 @@ import gruz from "../../assets/images/gruz.png";
 import klyuch from "../../assets/images/klyuch.png";
 import man from "../../assets/images/man.png";
 import watch from "../../assets/images/watch.png";
+import { HashLink } from 'react-router-hash-link';
 
 const Together = () => {
   return (
@@ -27,7 +28,7 @@ const Together = () => {
                 <br />
                 <br />
                 <br />
-                <button>Заказать звонок</button>
+                <HashLink smooth to="#order_call"><button>Заказать звонок</button></HashLink>
               </p>
             </div>
             <div className="together__right">
