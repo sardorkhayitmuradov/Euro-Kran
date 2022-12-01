@@ -1,4 +1,5 @@
 import React from 'react'
+import Clients from '../../components/AboutClients/Clients'
 import EuroKran from '../../components/aboutEuroKran/EuroKran'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/Header/Header'
@@ -11,6 +12,7 @@ const About = () => {
        <Header/>
        <EuroKran/>
        <Uslugi/>
+       <Clients/>
 
        <Iframe/>
        <Footer/>

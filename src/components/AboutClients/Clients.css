@@ -1,0 +1,23 @@
+.about__clients{
+       width: 100%;
+
+       background: #e5e5e5;
+}
+
+.about__clients__container{
+       width: 1180px;
+       margin: auto;
+       font-family: 'Montserrat';
+       padding: 100px 0;
+}
+
+.about__clients__label {
+       font-weight: 700;
+       font-size: 40px;
+       color: #2d2d2d;
+       padding: 60px 0;
+}
+
+.about__cients__slider__card{
+       width: 350px !important;
+}

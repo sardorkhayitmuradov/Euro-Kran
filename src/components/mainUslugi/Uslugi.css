@@ -40,9 +40,30 @@
 }
 
 .uslugi__end__label {
+  height: 160px;
+
   font-size: 155px;
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   color: #e5e5e5;
+}
+
+
+@media all and (max-width: 952px) {
+  .uslugi__parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+
+
+@media all and (max-width: 768px) {
+  .uslugi__parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
