@@ -1,0 +1,26 @@
+.zagolovok{
+       width: 100%;
+
+       background: #e5e5e5;
+}
+
+.zagolovok__container{
+       width: 1180px;
+       margin: 0 auto;
+       font-family: 'Montserrat';
+       padding: 100px 0;
+}
+
+.zagolovok__label{
+       font-weight: 700;
+       font-size: 40px;
+       color: #2d2d2d;
+}
+
+.zagolovok__content{
+       padding-top: 60px;
+       font-weight: 400;
+       font-size: 16px;
+       color: #2d2d2d;
+       line-height: 25.07px;
+}
