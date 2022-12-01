@@ -18,6 +18,7 @@ const Footer = () => {
                 <img src={logo} alt="Logo" />
               </li>
               <li>Аренда мобильных и гусеничных кранов LIEBHERR</li>
+              <br />
               <li>© 2000-2021 Все права защищены</li>
             </ul>
             <ul className="footer__ul2">

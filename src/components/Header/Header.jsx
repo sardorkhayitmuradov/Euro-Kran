@@ -6,6 +6,7 @@ import location from "../../assets/images/location.svg";
 import call from "../../assets/images/call.svg";
 import search from "../../assets/images/search.svg";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   React.useEffect(() => {
@@ -70,7 +71,7 @@ const Header = () => {
                   <NavLink>Каталог</NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link2">
-                  <NavLink>Услуги</NavLink>
+                  <HashLink smooth to="#uslugi">Услуги</HashLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link3">
                   <NavLink>О компании</NavLink>

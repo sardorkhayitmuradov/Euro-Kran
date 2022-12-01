@@ -8,7 +8,7 @@ import four from "../../assets/images/04.png";
 const DarkSect = () => {
   return (
     <>
-      <section className="dark__sect">
+      <section className="dark__sect" >
         <div className="dark__sect__img">
           <div className="dark__sect__container">
             <h1 className="dar__sect__label">

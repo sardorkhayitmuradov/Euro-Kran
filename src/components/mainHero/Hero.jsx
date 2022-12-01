@@ -1,7 +1,5 @@
 import React from "react";
 import "../mainHero/Hero.css";
-import white from "../../assets/images/white-fon.png";
-import full from "../../assets/images/hero-full1.png";
 import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
@@ -24,10 +22,10 @@ const Hero = () => {
                 любых задач и грузов. работаем по всей России
               </p>
               <div className="hero__btns">
-                    <HashLink smooth to="#order_call">
-                    <button className="hero__btn1">Заказать звонок</button>
-                    </HashLink>
-                     <button className="hero__btn2">Каталог техники</button>
+                <HashLink smooth to="#order_call">
+                  <button className="hero__btn1">Заказать звонок</button>
+                </HashLink>
+                <button className="hero__btn2">Каталог техники</button>
               </div>
             </div>
             <div className="hero__right">

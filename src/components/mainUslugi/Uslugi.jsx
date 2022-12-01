@@ -5,7 +5,7 @@ import {uslugi} from "../../dbsUslugi";
 const Uslugi = () => {
   return (
     <>
-    <section className="uslugi__sect">
+    <section className="uslugi__sect" id="uslugi">
       <div className="uslugi__container">
         <h1 className="uslugi__label">Услуги</h1>
           <div className="uslugi__parent">
