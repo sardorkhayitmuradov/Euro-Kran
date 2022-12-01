@@ -19,6 +19,9 @@ const Uslugi = () => {
         })}
           </div>
       </div>
+      <h1 className="uslugi__end__label">
+      SERVICES
+      </h1>
     </section>
     </>
   )

@@ -1,40 +1,48 @@
 .uslugi__container {
-       width:1180px;
-       margin:0 auto;
-       padding: 60px 0;
-       font-family: 'Montserrat';
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 60px;
+  font-family: "Montserrat";
 }
 
-.uslugi__label{
-       font-size: 40px;
-       font-weight: 700;
-       color: #2D2D2D;
+.uslugi__label {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2d2d2d;
 }
 
-.uslugi__parent{
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       gap: 30px;
+.uslugi__parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .uslugi__card {
-       width: 369px;
-       height: 430px;
-       cursor: pointer;
+  width: 369px;
+  height: 430px;
+  cursor: pointer;
 }
 
 .uslugi__card p {
-       height: 70px;
+  height: 70px;
 
-       padding: 12px;
-       font-size: 18px;
-       font-weight: 700;
-       text-align: center;
-       color: #fff;
-       background: #FCB427;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #fcb427;
 }
 
 .uslugi__card img {
-       width: 100%;
-       object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+}
+
+.uslugi__end__label {
+  font-size: 155px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  color: #e5e5e5;
 }

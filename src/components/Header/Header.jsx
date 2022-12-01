@@ -22,7 +22,7 @@ const Header = () => {
           <div className="header__container">
             <ul className="header__nav1__ul">
               <li className="link_logo">
-                <NavLink>
+                <NavLink to={"/"}>
                   <img src={logo} alt="Logo" />
                 </NavLink>
               </li>
@@ -71,10 +71,10 @@ const Header = () => {
                   <NavLink>Каталог</NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link2">
-                  <HashLink smooth to="#uslugi">Услуги</HashLink>
+                  <HashLink smooth to="/#uslugi">Услуги</HashLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link3">
-                  <NavLink>О компании</NavLink>
+                  <NavLink to="/about">О компании</NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link4">
                   <NavLink>Объекты</NavLink>
