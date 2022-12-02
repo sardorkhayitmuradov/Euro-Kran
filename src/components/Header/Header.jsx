@@ -98,14 +98,25 @@ const Header = () => {
                     Объекты
                   </NavLink>
                 </li>
-                <li className="nav2__ul_link nav__ul__link5">
-                  <NavLink>Цены</NavLink>
-                </li>
                 <li className="nav2__ul_link nav__ul__link6">
-                  <NavLink>Блог</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
+                    to="/blog"
+                  >
+                    Блог
+                  </NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link7">
-                  <NavLink>Контакты</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
+                    to="/contacts"
+                  >
+                    Контакты
+                  </NavLink>
                 </li>
               </ul>
               <div className="nav2__buttonIn">
