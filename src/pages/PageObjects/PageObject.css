@@ -1,0 +1,23 @@
+.page__object__p  {
+       font-weight: 400;
+       font-size: 16px;
+       color: #2d2d2d;
+       line-height: 25.07px;
+       padding: 40px 0;
+}
+
+.page__object__params__parent img {
+       width: 100%;
+}
+
+.small__params__images{
+       display: grid;
+       grid-template-columns: repeat(6,1fr);
+       gap: 10px;
+       padding-top: 20px;
+}
+
+.small__params__images img {
+       width: 100%;
+       object-fit: cover;
+}

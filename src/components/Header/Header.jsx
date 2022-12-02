@@ -9,6 +9,9 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
+  let activeStyle = {
+    textDecoration: "underline #FCD127",
+  };
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -71,13 +74,29 @@ const Header = () => {
                   <NavLink>Каталог</NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link2">
-                  <HashLink smooth to="/#uslugi">Услуги</HashLink>
+                  <HashLink smooth to="/#uslugi">
+                    Услуги
+                  </HashLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link3">
-                  <NavLink to="/about">О компании</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
+                    to="/about"
+                  >
+                    О компании
+                  </NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link4">
-                  <NavLink>Объекты</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
+                    to="/objects"
+                  >
+                    Объекты
+                  </NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link5">
                   <NavLink>Цены</NavLink>

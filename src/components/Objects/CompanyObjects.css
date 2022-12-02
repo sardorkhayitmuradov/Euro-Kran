@@ -1,0 +1,85 @@
+.objects {
+  width: 100%;
+  height: max-content;
+
+  background: #e5e5e5;
+}
+
+.objects__container {
+  width: 1180px;
+
+  font-family: "Montserrat";
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.objects__link {
+  font-weight: 600;
+  font-size: 12px;
+  color: #000;
+}
+
+.objects__link span {
+  font-weight: 400;
+}
+
+.objects__label {
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 35px;
+  color: #2d2d2d;
+}
+
+.objects__db {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.objects__card {
+  background: #fff;
+}
+
+.objects__card img {
+  width: 100%;
+}
+
+.objects__card h3 {
+  padding: 0 20px;
+  line-height: 25.59px;
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.objects__card h4 {
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.objects__btn {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.objects__btn button {
+  width: 219px;
+  height: 50px;
+
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #fcb427;
+  background: transparent;
+  color: #2d2d2d;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.objects__btn button:hover {
+  background: #fcb427;
+  color: #fff;
+}
