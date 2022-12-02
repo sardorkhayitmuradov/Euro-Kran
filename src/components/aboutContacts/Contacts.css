@@ -1,0 +1,156 @@
+.about__contacts__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  padding: 100px 0;
+}
+
+.about__contacts__label {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d2d2d;
+  padding-bottom: 60px;
+}
+
+.about__contacts__parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.contacts__icons {
+  display: flex;
+  gap: 70px;
+}
+
+.contacts__geo {
+  height: 30px;
+
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.contacts__phones {
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacts__phones img {
+  width: 30px;
+  height: 30px;
+}
+.contacts__email {
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacts__clock {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.contacts__email img {
+  width: 30px;
+  height: 30px;
+}
+
+.about__contacts__right form .input1 {
+  width: 470px;
+  height: 50px;
+
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about__contacts__left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.07px;
+}
+
+.about__contacts__right form .input3,
+.input2 {
+  width: 228px;
+  height: 50px;
+
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.right__email__tel{
+       display: flex;
+       gap: 13px;
+}
+
+.about__contacts__right form input:focus {
+       outline: #FCB427 2px solid;
+       border: none;
+}
+
+.input4{
+  width: 470px;
+  height: 139px;
+
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  resize: none;
+  padding-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.input4:focus{
+  outline: #FCB427 2px solid;
+  border: none;
+}
+
+.check__label{
+  height: 30px;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.check__label label {
+  font-size: 10.5px;
+}
+
+.check__label input:focus {
+  outline: none !important;
+}
+
+
+.input__btn {
+  width: 470px;
+  height: 50px;
+
+  border: 3px solid #FCB427;
+  color: #fff;
+  background: #FCB427;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.input__btn:hover {
+  background: #fff;
+  color: #FCB427;
+}
