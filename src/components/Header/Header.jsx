@@ -71,7 +71,14 @@ const Header = () => {
             <div className="nav2__parent">
               <ul className="header__nav2__ul">
                 <li className="nav2__ul_link nav__ul__link1">
-                  <NavLink>Каталог</NavLink>
+                  <NavLink
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
+                    to="/catalog"
+                  >
+                    Каталог
+                  </NavLink>
                 </li>
                 <li className="nav2__ul_link nav__ul__link2">
                   <HashLink smooth to="/#uslugi">
@@ -122,7 +129,11 @@ const Header = () => {
               <div className="nav2__buttonIn">
                 <input className="nav2__input" type="text" id="enter" />
                 <button className="nav2__input__btn" id="clear">
-                  <img src={search} alt="Search" />
+                  <img
+                    onClick={() => window.location.reload()}
+                    src={search}
+                    alt="Search"
+                  />
                 </button>
               </div>
             </div>

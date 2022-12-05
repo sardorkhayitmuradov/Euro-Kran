@@ -7,6 +7,7 @@ import PageObject from './pages/PageObjects/PageObject';
 import Blog from './pages/Blog/Blog';
 import PageBlogs from './pages/PageBlogs/PageBlogs';
 import Contacts from './pages/Contacts/Contacts';
+import Catalog from './pages/Catalog/Catalog';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/pageblog' element={<PageBlogs/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
+      <Route path='/catalog' element={<Catalog/>}/>
     </Routes>
     </BrowserRouter>
     </>
