@@ -27,7 +27,7 @@ const Blog = () => {
                   <div className="blog__body">
                     <h3>{el.title}</h3>
                     <p>{el.desc}</p>
-                    <Link>
+                    <Link to="/pageblog">
                       <button>{el.btn}</button>
                     </Link>
                   </div>
