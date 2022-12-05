@@ -1,26 +1,24 @@
 import React from "react";
-import "../aboutContacts/Contacts.css";
+import "../Contacts/ContactsForm.css";
 import clock from "../../assets/images/contact-clock.svg";
 import email from "../../assets/images/email.svg";
 import geo from "../../assets/images/geo.svg";
 import telefon from "../../assets/images/telefon.svg";
+import file from "../../assets/images/file.svg";
 
-const Contacts = () => {
+const ContactsForm = () => {
   return (
     <>
-      <div className="about__contacts">
-        <div className="about__contacts__container">
-          <h1 className="about__contacts__label">Контакты</h1>
+      <div className="contacts">
+        <div className="contacts__container">
+          <div className="contacts__labels">
+            <h5>
+              <span>Главная -</span> Контакты
+            </h5>
+            <h1>Контакты</h1>
+          </div>
           <div className="about__contacts__parent">
             <div className="about__contacts__left">
-              <p>
-                Ежедневно мы развиваемся и стараемся стать лучше для вас,
-                поэтому всегда рады получить от вас обратную связь с пожеланиями
-                и идеями по улучшению наших продуктов! <br /> <br /> Если у вас
-                остались вопросы или есть предложения как стать лучше пишите
-                нам!
-              </p>
-              <br />
               <div className="contacts__geo">
                 <img src={geo} alt="Location" />
                 <p>
@@ -47,6 +45,17 @@ const Contacts = () => {
                   <div className="contacts__clock">
                     <img src={clock} alt="Clock" />
                     10:00 - 17:00
+                  </div>
+                </div>
+              </div>
+              <div className="contacts__form__rekvizitla">
+                <h4>Реквизиты:</h4>
+                <div className="contacts__phones">
+                  <img src={file} alt="Phone" />
+                  <div className="numbers">
+                    <p>ООО "Компания Еврокран" </p>
+                    <p className="numbers__center">ИНН: 7718999293</p>
+                    <p>ОГРН: 5147746130593</p>
                   </div>
                 </div>
               </div>
@@ -83,10 +92,24 @@ const Contacts = () => {
               </form>
             </div>
           </div>
+          <div className="contacts__form__how">
+            <h4>Как добраться:</h4>
+            <p>
+              Принимая во внимание показатели успешности, глубокий уровень
+              погружения играет определяющее значение для прогресса
+              профессионального сообщества. Лишь предприниматели в сети
+              интернет, которые представляют собой яркий пример
+              континентально-европейского типа политической культуры, будут
+              ограничены исключительно образом мышления. Кстати, активно
+              развивающиеся страны третьего мира смешаны с не уникальными
+              данными до степени совершенной неузнаваемости, из-за чего
+              возрастает их статус бесполезности.
+            </p>
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-export default Contacts;
+export default ContactsForm;

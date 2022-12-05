@@ -1,0 +1,50 @@
+.contacts__container {
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  padding: 60px 0;
+}
+
+.contacts__labels h5 {
+  padding-bottom: 30px;
+  color: #898989;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.contacts__labels h5 span {
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
+.contacts__labels h1 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #2d2d2d;
+  padding: 60px 0;
+}
+
+.contacts__form__how h4 {
+       padding: 30px 0;
+       font-weight: 700;
+       font-size: 16px;
+       color: #2d2d2d;
+}
+
+.contacts__form__how p {
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 21px;
+       color: #2d2d2d;
+}
+
+.contacts__form__rekvizitla {
+       padding: 60px 0;
+}
+
+.contacts__form__rekvizitla h4{
+       font-weight: 700;
+       font-size: 16px;
+       color: #2d2d2d;
+       padding-bottom: 30px;
+}
