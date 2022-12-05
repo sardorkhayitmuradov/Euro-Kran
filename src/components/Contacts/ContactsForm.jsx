@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Contacts/ContactsForm.css";
 import clock from "../../assets/images/contact-clock.svg";
 import email from "../../assets/images/email.svg";
 import geo from "../../assets/images/geo.svg";
 import telefon from "../../assets/images/telefon.svg";
 import file from "../../assets/images/file.svg";
+import Box from "@mui/material/Box";
+import x from "../../assets/images/x-modal.svg";
+import Modal from "@mui/material/Modal";
 
 const ContactsForm = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [phone, setPhone] = useState("");
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 620,
+    height: 403,
+    // bgcolor: "transparent",
+    // backdropFilter: "blur(10px)",
+    border: "none",
+    boxShadow: "none",
+    p: 10,
+    textAlign: "center",
+    paddingTop: "100px",
+  };
   return (
     <>
       <div className="contacts">
@@ -70,7 +93,13 @@ const ContactsForm = () => {
                 />
                 <div className="right__email__tel">
                   <input className="input2" type="email" placeholder="E-mail" />
-                  <input className="input3" type="text" placeholder="Телефон" />
+                  <input
+                    className="input3"
+                    type="text"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="Телефон"
+                  />
                 </div>
                 <textarea
                   name="message"
@@ -85,11 +114,33 @@ const ContactsForm = () => {
                   </label>
                 </div>
                 <input
+                  disabled={!phone}
                   className="input__btn"
-                  type="submit"
+                  type="button"
                   value={"Оставить заявку"}
+                  onClick={handleOpen}
                 />
               </form>
+              <Modal
+                open={open}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                hideBackdrop={true}
+              >
+                <Box sx={style} className="contact__modal">
+                  <img
+                    className="modal__closer"
+                    onClick={handleClose}
+                    src={x}
+                    alt="X-modal"
+                  />
+                  <h1 className="modal__title">Ваша заявка отправлена</h1>
+                  <p className="modal__paragraf">
+                    Мы позвоним вам в самое ближайшее время
+                  </p>
+                  <button className="modal__btn">Вернуться</button>
+                </Box>
+              </Modal>
             </div>
           </div>
           <div className="contacts__form__how">

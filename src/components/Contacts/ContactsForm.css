@@ -25,26 +25,73 @@
 }
 
 .contacts__form__how h4 {
-       padding: 30px 0;
-       font-weight: 700;
-       font-size: 16px;
-       color: #2d2d2d;
+  padding: 30px 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d2d2d;
 }
 
 .contacts__form__how p {
-       font-weight: 400;
-       font-size: 16px;
-       line-height: 21px;
-       color: #2d2d2d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #2d2d2d;
 }
 
 .contacts__form__rekvizitla {
-       padding: 60px 0;
+  padding: 60px 0;
 }
 
-.contacts__form__rekvizitla h4{
-       font-weight: 700;
-       font-size: 16px;
-       color: #2d2d2d;
-       padding-bottom: 30px;
+.contacts__form__rekvizitla h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d2d2d;
+  padding-bottom: 30px;
+}
+
+.contacts {
+  background: #e5e5e5;
+}
+
+.modal__closer {
+  float: right;
+  cursor: pointer;
+}
+
+.modal__title {
+  padding-top: 80px;
+  color: #2d2d2d;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.modal__btn {
+  width: 220px;
+  height: 50px;
+
+  background: transparent;
+  border: 1px solid #ffbf1d;
+  color: #2d2d2d;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal__btn:hover {
+  background: #ffbf1d;
+  color: #fff;
+}
+
+.modal__paragraf {
+  padding-top: 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+
+.contact__modal {
+  background: rgba(243, 243, 243, 0.7);
+  backdrop-filter: blur(4px);
 }

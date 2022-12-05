@@ -6,7 +6,6 @@ import location from "../../assets/images/location.svg";
 import call from "../../assets/images/call.svg";
 import search from "../../assets/images/search.svg";
 import { NavLink } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   let activeStyle = {
@@ -80,11 +79,11 @@ const Header = () => {
                     Каталог
                   </NavLink>
                 </li>
-                <li className="nav2__ul_link nav__ul__link2">
+                {/* <li className="nav2__ul_link nav__ul__link2">
                   <HashLink smooth to="/#uslugi">
                     Услуги
                   </HashLink>
-                </li>
+                </li> */}
                 <li className="nav2__ul_link nav__ul__link3">
                   <NavLink
                     style={({ isActive }) =>
