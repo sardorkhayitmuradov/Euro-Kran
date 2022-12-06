@@ -1,5 +1,4 @@
 import React from "react";
-import Zagolovok from "../../components/aboutZagolovok/Zagolovok";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/Header/Header";
 import "../PageObjects/PageObject.css";

@@ -5,12 +5,13 @@ import Consultation from '../../components/CatalogConsultation/Consultation';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/Header/Header';
 import Iframe from '../../components/Iframe/Iframe';
+import Arenda from '../Arenda/Arenda';
 
 const Catalog = () => {
   return (
     <>
        <Header/>
-
+      <Arenda/>
        <Consultation/>
        <Zagolovok/>
        <Contacts/>
