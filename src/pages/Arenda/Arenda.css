@@ -12,6 +12,12 @@
        margin: auto;
 }
 
+.arenda__parent{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 40px;
+       padding-top: 60px;
+}
 
 .arenda__labels h5 {
        font-weight: 400;
@@ -31,12 +37,14 @@
        font-size: 44px;
 }
 
+.arenda__card__twink p {
+       font-size: 14px;
+}
 
 .arenda__krans__parent{
        display: grid;
        grid-template-columns: repeat(3,1fr);
        gap: 30px;
-       padding-top: 60px;
 }
 
 .arenda__krans__card{
@@ -48,7 +56,7 @@
 }
 
 .arenda__card__body{
-       padding: 20px;
+       padding: 20px 30px;
        color: #2D2D2D;
 }
 
@@ -61,7 +69,7 @@
 .arenda__card__twink{
        padding-top: 15px;
        display: flex;
-       gap: 30px;
+       gap: 40px;
        transition: 0.5s ease;
        cursor: pointer;
 }
@@ -84,8 +92,80 @@
        color: #FCB427;
 }
 
+.arenda__filter1 {
+       height: max-content;
 
-.arenda__card__twink:hover{
-       padding-left: 20px;
-       
+       background: #fff;
+       cursor: pointer;
+}
+
+.arenda__filter1 h1 {
+       height: 56px;
+       text-align: center;
+       background: #2D2D2D;
+       color: #fff;
+       font-size: 18px;
+       padding: 15px;
+}
+
+.arenda__filter1 ul {
+       padding: 20px;
+}
+
+.arenda__filter1 ul li {
+       display: flex;
+       padding: 10px 0;
+       gap: 5px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.filter__inputs input{ 
+       width: 84px;
+       height: 25px;
+       padding-left: 10px;
+       border: 1px solid #535554;
+}
+
+.filter__inputs{
+       display: flex !important;
+       gap: 30px !important;
+}
+
+
+input[type="checkbox"] {
+       width: 16px;
+}
+
+.css-187mznn-MuiSlider-root{
+       color: #FCB427 !important;
+}
+.disable__li{
+       color: #c4c4c4;
+}
+
+.arenda__filter1 .btn__li button {
+       width: 100%;
+       height: 50px;
+
+       color: #fff;
+       background: #2D2D2D;
+       border: 2px solid #2D2D2D;
+       font-weight: 700;
+       font-size: 16px;
+       cursor: pointer;
+       margin-top: 20px;
+}
+
+.arenda__filter1 .btn__li button:hover {
+       color: #2D2D2D;
+       background: #fff;
 }

@@ -138,7 +138,12 @@ const ContactsForm = () => {
                   <p className="modal__paragraf">
                     Мы позвоним вам в самое ближайшее время
                   </p>
-                  <button className="modal__btn">Вернуться</button>
+                  <button
+                    className="modal__btn"
+                    onClick={() => window.location.reload()}
+                  >
+                    Вернуться
+                  </button>
                 </Box>
               </Modal>
             </div>

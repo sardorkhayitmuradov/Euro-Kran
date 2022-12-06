@@ -35,3 +35,18 @@ code {
   border-radius: 7px !important;
   background: #9c9b9b !important;
 }
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background: #fcb427 !important;
+  color: #fff !important;
+}
+
+.css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon {
+  color: #fcb427 !important;
+}
+
+
+input:focus{
+  border: #fcb427 2px solid !important;
+  outline: none;
+}

@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import { pagination } from "../pagination/pagination";
 
 const MuiPagination = ({ setSliderdb }) => {
-  const pageSize = 6;
+  const pageSize = 9;
 
   const [pagin, setPagin] = useState({
     count: 0,
