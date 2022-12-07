@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Arenda/Arenda.css";
 import MuiPagination from "../../pagination/MuiPagination";
 import MuiSlider from "../../MuiSlider";
+import { Dropdown } from "rsuite";
 
 const Arenda = () => {
   const [sliderdb, setSliderdb] = useState([]);
@@ -67,6 +68,79 @@ const Arenda = () => {
                     <button>Показать</button>
                   </li>
                 </ul>
+              </div>
+              <div
+                className="arenda__filter1 arenda__filter2"
+                style={{ marginTop: "40px" }}
+              >
+                <h1>Парк техники</h1>
+                <div className="arenda__dropdown1">
+                  <Dropdown
+                    defaultOpen="true"
+                    className="rsuit__btn"
+                    title="Мобильные краны Liebherr LTM"
+                  >
+                    <Dropdown.Item>LTM 1040 (40 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1050 (50 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1070 (70 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1090 (90 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1095 (95 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1120 (120 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1250 (250 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1300 (300 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1400 (400 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1500 (500 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1750 (750 т.)</Dropdown.Item>
+                  </Dropdown>
+                </div>
+                <div className="arenda__dropdown1">
+                  <Dropdown
+                    className="rsuit__btn"
+                    title="Гусеничные краны Liebherr LR"
+                  >
+                    <Dropdown.Item>LTM 1040 (40 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1050 (50 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1070 (70 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1090 (90 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1095 (95 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1120 (120 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1250 (250 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1300 (300 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1400 (400 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1500 (500 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1750 (750 т.)</Dropdown.Item>
+                  </Dropdown>
+                </div>
+                <div className="arenda__dropdown1">
+                  <Dropdown className="rsuit__btn" title="Низкорамные тралы">
+                    <Dropdown.Item>LTM 1040 (40 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1050 (50 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1070 (70 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1090 (90 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1095 (95 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1120 (120 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1250 (250 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1300 (300 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1400 (400 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1500 (500 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1750 (750 т.)</Dropdown.Item>
+                  </Dropdown>
+                </div>
+                <div className="arenda__dropdown1">
+                  <Dropdown className="rsuit__btn" title="Модульные платформы">
+                    <Dropdown.Item>LTM 1040 (40 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1050 (50 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1070 (70 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1090 (90 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1095 (95 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1120 (120 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1250 (250 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1300 (300 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1400 (400 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1500 (500 т.)</Dropdown.Item>
+                    <Dropdown.Item>LTM 1750 (750 т.)</Dropdown.Item>
+                  </Dropdown>
+                </div>
               </div>
             </div>
             <div className="arenda__krans__parent">
