@@ -1,55 +1,55 @@
 .footer__container {
-    width: 1180px;
-    margin: 0 auto;
-    font-family: "Montserrat";
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Montserrat";
 }
 footer {
-    width: 100%;
-    height: max-content;
-    padding: 60px 0;
-    background: #2D2D2D;
+  width: 100%;
+  height: max-content;
+  padding: 60px 0;
+  background: #2d2d2d;
 }
 
 footer ul li {
-    color: #fff;
-    cursor: pointer;   
-    font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .footer__parent {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
 }
 
-.footer__ul5__btn{
-    width: 170px;
-    height: 43px;
+.footer__ul5__btn {
+  width: 170px;
+  height: 43px;
 
-    background: #fff;
-    color: #000;
-    font-weight: 700;
-    font-size: 15px;
-    border: 2px solid #fff;
-    margin-bottom: 30px;
-    cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .footer__ul5__btn:hover {
-    background: transparent;
-    color: #fff;
+  background: transparent;
+  color: #fff;
 }
 
 .footer__ul5 li {
-    width: 33px;
-    height: 31px;
+  width: 33px;
+  height: 31px;
 
-    display: flex;
-    gap: 7px;
+  display: flex;
+  gap: 7px;
 }
 
-.footer__li__title{
-    padding-bottom: 5px;
+.footer__li__title {
+  padding-bottom: 5px;
 }
 
 .footer__ul1 li,
@@ -57,12 +57,59 @@ footer ul li {
 .footer__ul3 li,
 .footer__ul4 li,
 .footer__ul5 li,
-.footer__ul6 li{
-    padding-bottom: 10px;
+.footer__ul6 li {
+  padding-bottom: 10px;
 }
 
 .footer__li__title {
-    font-size: 13px;
-    font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
 }
 
+@media all and (max-width: 1216px) {
+    .footer__container {
+        width: 100%;
+        margin: auto;
+        padding: 0 40px;
+    }
+    .footer__parent {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    .footer__ul5 li {
+        width: 100%;
+        height: 31px;
+      
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .footer__parent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    footer ul li {
+        font-size: 10px;
+    }
+    footer {
+        padding: 30px 0;
+    }
+}
+
+
+
+@media all and (max-width: 382px) {
+    .footer__parent {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+}

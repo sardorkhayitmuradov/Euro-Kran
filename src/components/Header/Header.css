@@ -136,15 +136,12 @@
   font-weight: 500;
 }
 
-/* @media all and (max-width: 1216px) {
-  .header__nav1__ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+@media all and (max-width: 1216px) {
+  .header__nav1__ul{
+    display: flex;
+    justify-content: space-between;
   }
-  .link_item2,
-  .link_item3,
-  .link_item4 {
+  .link_item4,.link_item3, .link_item2{
     display: none;
   }
-} */
+}

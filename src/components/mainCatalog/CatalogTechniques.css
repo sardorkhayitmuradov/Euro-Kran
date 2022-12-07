@@ -3,11 +3,11 @@
   height: max-content;
 
   padding: 70px 0;
-  background: #E5E5E5;
+  background: #e5e5e5;
   font-family: "Montserrat";
 }
 
-.catalog__tech__label{
+.catalog__tech__label {
   font-weight: 700;
   font-size: 40px;
   color: #2d2d2d;
@@ -23,7 +23,8 @@
 }
 
 .catalog__tech__slider {
-       cursor: pointer;
+  cursor: pointer;
+  padding: 0px;
 }
 
 .catalog__tech__container span {
@@ -48,8 +49,8 @@
   width: 350px !important;
   height: 590px;
 
-  background: #fff;
   margin: 0 200px;
+  background: #fff;
   font-family: "Montserrat";
 }
 
@@ -91,9 +92,10 @@
 }
 
 .slider__card__btn button {
-  width: 311px;
+  width: 100%;
   height: 50px;
   background: #fcb427;
+  margin: 34px 0;
   color: #fff;
   border: 2px solid #fcb427;
   font-size: 18px;
@@ -105,9 +107,78 @@
 }
 
 .slick-dots li button:before {
-       font-size: 10px !important;
+  font-size: 10px !important;
 }
 
 .slick-dots li.slick-active button:before {
-       color: #fcb427 !important;
+  color: #fcb427 !important;
+}
+
+@media all and (max-width: 1425px) {
+  .catalog__tech__container span {
+    display: none;
+  }
+  .catalog__tech {
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+  }
+  .slider__card {
+    width: 320px !important;
+    height: 590px;
+
+    margin: 0;
+    background: #fff;
+    font-family: "Montserrat";
+  }
+  .card__body h2 {
+    padding: 15px;
+  }
+
+  .slider__card__btn {
+    text-align: start;
+  }
+
+  .slider__card__btn button {
+    width: 170px;
+    height: 50px;
+    background: #fcb427;
+    color: #fff;
+    margin: 10px 20px;
+    border: 2px solid #fcb427;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .slider__card__twink {
+    padding: 10px 20px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .slider__card {
+    width: 300px;
+    height: 590px;
+    background: #fff;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+  .catalog__tech {
+    width: 100%;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  .card__body h2 {
+    font-size: 20px;
+  }
+  .card__body p {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .slider__card {
+    margin: 0 !important;
+    height: 590px;
+    background: #fff;
+    font-family: "Montserrat";
+  }
 }

@@ -43,3 +43,75 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+@media all and (max-width: 1241px) {
+  .dark__sect {
+    width: 100%;
+    height: max-content !important;
+  
+    background: #2d2d2d;
+  }
+  .dark__sect__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 40px;
+    font-family: "Montserrat";
+  }
+  .dark__sect__parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .dark__sect__img {
+    width: 100%;
+    height: 100%;
+  
+    background: url("../../assets//images/lines.png") no-repeat center
+      center/cover;
+  }
+  .dar__sect__label {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .dark__sect__card p {
+    color: #fff;
+   padding: 20px 40px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+  .dark__sect__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 20px;
+    font-family: "Montserrat";
+  }
+  .dark__sect__parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .dar__sect__label {
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .dark__sect__card p {
+    color: #fff;
+   padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .dark__sect__img {
+    width: 100%;
+    height: 100%;
+  
+    background: #2d2d2d;
+  }
+}

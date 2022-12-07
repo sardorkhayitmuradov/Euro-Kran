@@ -15,11 +15,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  text-align: center;
 }
 
 .uslugi__card {
-  width: 369px;
-  height: 430px;
+  width: 100%;
+  height: max-content;
   cursor: pointer;
 }
 
@@ -49,8 +50,14 @@
   color: #e5e5e5;
 }
 
-
-@media all and (max-width: 952px) {
+@media all and (max-width: 1216px) {
+  .uslugi__container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+    padding: 40px;
+    font-family: "Montserrat";
+  }
   .uslugi__parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -58,9 +65,13 @@
   }
 }
 
+@media all and (max-width: 688px) {
+  .uslugi__end__label{
+    display: none;
+  }
+}
 
-
-@media all and (max-width: 768px) {
+@media all and (max-width: 600px) {
   .uslugi__parent {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

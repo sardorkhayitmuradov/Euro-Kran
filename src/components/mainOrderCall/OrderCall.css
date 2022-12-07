@@ -76,3 +76,69 @@
        font-weight: 300;
        font-size: 14px;
 }
+
+
+@media all and (max-width: 1241px) {
+       .order__call__container {
+              width: 100%;
+              margin: 0 auto;
+              padding: 0 40px;
+            }
+            .order__call__input {
+              width: 200px;
+            }
+            .order__call__btn{
+              width: 200px;
+            }
+}
+
+
+@media all and (max-width: 858px) {
+       .order__call__sect{
+              height: max-content;
+              padding: 40px 0;
+       }
+       .order__call__container {
+              width: 100%;
+              margin: 0 auto;
+              padding: 0 40px;
+            }
+            .order__call__form{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-top: 20px;
+            }
+            .order__form__inp2{
+              margin: 0;
+            }
+            .order__call__label {
+              font-weight: 500;
+              font-size: 33px;
+              padding: 0;
+            }
+            .order__call__form input {
+              width: 100%;
+              margin: 10px 0;
+              font-weight: 500;
+            }
+            .order__check__div {
+              height: 30px;
+              padding-top: 20px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+       }
+}
+
+
+@media all and (max-width: 600px) {
+       .order__call__sect{
+              background: #fff;
+       }
+       .order__call__container {
+              width: 100%;
+              margin: 0 auto;
+              padding: 0 20px;
+            }
+}

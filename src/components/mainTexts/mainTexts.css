@@ -32,3 +32,35 @@
   font-size: 16px;
   color: #2D2D2D;
 }
+
+
+@media all and (max-width: 1216px) {
+  .main__texts__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: "Montserrat";
+  }
+}
+
+@media all and (max-width: 700px) {
+  .main__texts__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    font-family: "Montserrat";
+  }
+  .main__text__labelh1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d2d2d;
+  }
+  .main__text__labelp{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .main__text__ul__li__item{
+    font-size: 13px !important;
+    line-height: 20px;
+  }
+}

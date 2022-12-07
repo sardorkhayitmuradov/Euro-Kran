@@ -21,8 +21,8 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 13px !important;
-  height: 10px;
+  width: 7px !important;
+  height: 7px;
   border: 1px solid #d5d5d5 !important;
 }
 
