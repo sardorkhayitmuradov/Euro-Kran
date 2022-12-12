@@ -32,10 +32,11 @@ const CatalogTechniques = () => {
         },
       },
       {
-        breakpoint: 656,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
@@ -49,7 +50,7 @@ const CatalogTechniques = () => {
         </div>
         <div className="catalog__tech__slider">
           <Slider {...settings}>
-            {sliderdb.map((el) => {
+            {sliderdb.slice(0,8).map((el) => {
               return (
                 <div className="slider__card" key={el.id}>
                   <img src={el.img} alt={el.name} />

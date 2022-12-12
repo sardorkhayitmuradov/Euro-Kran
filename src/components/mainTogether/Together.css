@@ -1,4 +1,4 @@
-.together{
+.together {
   background: #e5e5e5;
 }
 
@@ -65,8 +65,63 @@
 .klyuch h4,
 .man h4,
 .gruz h4 {
-       font-weight: 500;
-       font-size: 16px;
-       color: #2d2d2d;
-       padding-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2d2d2d;
+  padding-top: 10px;
+}
+
+@media all and (max-width: 1216px) {
+  .together__container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    padding: 40px;
+  }
+  .together__parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding: 40px 0;
+  }
+  .together__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+  }
+  .together__left {
+    width: 100%;
+    text-align: center;
+  }
+  .together__label {
+    color: #424242;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  .together__right {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+  }
+  .together__left p {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2d2d2d;
+  }
+  .together__label {
+    color: #424242;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+  }
 }

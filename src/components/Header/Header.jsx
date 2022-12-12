@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Header/Header.css";
 import logo from "../../assets/images/logo.svg";
 import clock from "../../assets/images/clock.svg";
@@ -7,6 +7,9 @@ import call from "../../assets/images/call.svg";
 import search from "../../assets/images/search.svg";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   let activeStyle = {
@@ -18,6 +21,11 @@ const Header = () => {
       behavior: "smooth",
     });
   }, []);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <>
       <header>
@@ -126,19 +134,63 @@ const Header = () => {
                   </NavLink>
                 </li>
               </ul>
-              <div className="nav2__buttonIn">
-                <input className="nav2__input" type="text" id="enter" />
-                <button className="nav2__input__btn" id="clear">
-                  <img
-                    onClick={() => window.location.reload()}
-                    src={search}
-                    alt="Search"
-                  />
-                </button>
-              </div>
             </div>
           </div>
         </nav>
+        <div className="mobile__mode">
+          <button className="sidebar__btn" onClick={toggleDrawer}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              className="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <Drawer
+            open={isOpen}
+            direction="left"
+            // size={"500px"}
+            className="bla bla bla"
+          >
+            <div className="side__bar">
+              <a onClick={toggleDrawer} className="close">
+                ×
+              </a>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/catalog">Каталог</Link>
+                </li>
+                <li>
+                  <HashLink smooth to="/#uslugi">
+                    Услуги
+                  </HashLink>
+                </li>
+                <li>
+                  <Link to="/about">О компании</Link>
+                </li>
+                <li>
+                  <Link to="/objects">Объекты</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Блог</Link>
+                </li>
+                <li>
+                  <Link to="/contacts">Контакты</Link>
+                </li>
+              </ul>
+            </div>
+          </Drawer>
+        </div>
       </header>
     </>
   );

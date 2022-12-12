@@ -88,34 +88,6 @@
   background: #f3f3f3;
 }
 
-.nav2__buttonIn {
-  width: 300px;
-  position: relative;
-}
-
-.nav2__input {
-  width: 270px;
-  height: 30px;
-
-  border: 1px solid rgba(45, 45, 45, 0.6);
-  outline: none;
-  padding-left: 10px;
-  background: transparent;
-}
-
-.nav2__input__btn {
-  position: absolute;
-  top: 0;
-  border-radius: 5px;
-  right: 40px;
-  border: none;
-  top: 2px;
-  height: 30px;
-  cursor: pointer;
-  color: white;
-  background: transparent;
-}
-
 .nav2__parent {
   display: flex;
   justify-content: space-between;
@@ -124,7 +96,7 @@
 }
 
 .header__nav2__ul {
-  width: 60%;
+  width: 80%;
 
   display: flex;
   justify-content: space-between;
@@ -136,12 +108,89 @@
   font-weight: 500;
 }
 
+.side__bar .close {
+  font-size: 40px;
+  margin-top: 40px;
+  padding: 0 40px;
+  float: right;
+  color: #2d2d2d;
+  cursor: pointer;
+}
+
+.sidebar__btn {
+  cursor: pointer;
+}
+
+.side__bar ul {
+  padding: 100px 40px;
+}
+
+.side__bar ul li {
+  padding: 10px 0;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+.side__bar ul li a {
+  color: #2d2d2d;
+  font-weight: 400;
+}
+
+.mobile__mode {
+  display: none;
+}
+
 @media all and (max-width: 1216px) {
-  .header__nav1__ul{
+  .header__nav1__ul {
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
   }
-  .link_item4,.link_item3, .link_item2{
+  .link_item4,
+  .link_item3,
+  .link_item2 {
     display: none;
+  }
+  .header__container {
+    width: 100%;
+    margin: auto;
+    padding: 0 40px;
+  }
+}
+
+@media all and (max-width: 952px) {
+  .header__nav2 {
+    display: none;
+  }
+  .mobile__mode {
+    display: block;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .sidebar__btn {
+    background: none;
+    border: none;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header__nav1__ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+  }
+  .header__nav1 {
+    width: 100%;
+    height: max-content;
+    padding: 20px 0;
+
+    background: #2d2d2d;
+  }
+  .header__container{
+    padding: 0;
   }
 }

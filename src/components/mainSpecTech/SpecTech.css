@@ -72,3 +72,92 @@
   background: #fff;
   color: #fcb427;
 }
+
+
+@media all and (max-width: 1488px) {
+  .spec__tec__name{
+    display: none;
+  }
+}
+
+
+@media all and (max-width: 1216px) {
+  .spec__tec__container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    padding: 60px 40px;
+  }
+}
+
+
+
+@media all and (max-width: 1000px) {
+  .spec__tec__parent {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+  }
+  .spec__tec__right {
+    width: 100%;
+    text-align: start;
+  }
+  .spec__tec__right p {
+    width: 70%;
+
+    padding: 40px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2d2d2d;
+    line-height: 25.07px;
+  }
+  .spec__tec__titles{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  .spec__tec__right {
+    width: 100%;
+    text-align: center;
+  }
+  .spec__tec__right p {
+    width: 100%;
+
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 13px;
+    color: #2d2d2d;
+    line-height: 20px;
+  }
+  .spec__tec__titles{
+    display: flex;
+    justify-content: center;
+  }
+  .spec__tec__titles h1 {
+    font-size: 30px;
+  }
+  .spec__tec__left img{
+    width: 100%;
+    
+    object-fit: contain;
+    margin: 10px 0;
+  }
+  .spec__tec__right h2 {
+    font-size: 24px;
+  }
+  .spec__tec__right button {
+    width: 170px;
+    height: 50px;
+    background: #fcb427;
+    color: #fff;
+    border: 2px solid #fcb427;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

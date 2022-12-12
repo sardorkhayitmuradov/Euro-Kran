@@ -114,6 +114,10 @@
   color: #fcb427 !important;
 }
 
+/* .catalog__tech{
+  display: none;
+} */
+
 @media all and (max-width: 1425px) {
   .catalog__tech__container span {
     display: none;
@@ -155,7 +159,7 @@
 }
 @media all and (max-width: 1000px) {
   .slider__card {
-    width: 300px;
+    width: 100% !important;
     height: 590px;
     background: #fff;
     margin: 0;
@@ -175,10 +179,65 @@
 }
 
 @media all and (max-width: 768px) {
+  .catalog__tech {
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+  }
   .slider__card {
+    width: 100% !important;
     margin: 0 !important;
     height: 590px;
     background: #fff;
     font-family: "Montserrat";
+  }
+  .catalog__tech__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .catalog__tech {
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+  }
+  .card__body h2 {
+    font-size: 20px;
+  }
+  .card__body p {
+    font-size: 14px;
+  }
+  .slick-next,
+  .slick-prev {
+    display: block !important;
+  }
+  .slider__card img {
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .slick-next:before, .slick-prev:before{
+    color: #ffad09 !important;
+  }
+  .slider__card__btn button {
+    width: 170px;
+    height: 50px;
+    background: #fcb427;
+    color: #fff;
+    margin: 20px;
+    border: 2px solid #fcb427;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .catalog__tech__container {
+    padding: 40px 0;
+  }
+  .catalog__tech__label{
+    font-size: 25px;
   }
 }
