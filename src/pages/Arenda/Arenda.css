@@ -42,6 +42,7 @@
 }
 
 .arenda__krans__parent {
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -49,20 +50,27 @@
 
 .arenda__krans__card {
   background: #fff;
+  height: max-content;
+  padding: 0;
 }
 
 .arenda__krans__card img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
+
 .arenda__card__body {
-  padding: 20px 30px;
+  padding: 10px 20px;
   color: #2d2d2d;
 }
 
 .arenda__card__body h2 {
+  min-height: 66px;
+  font-size: 18px;
   border-bottom: 1px solid #fcd571;
-  padding-bottom: 20px;
+  padding: 0;
 }
 
 .arenda__card__twink {

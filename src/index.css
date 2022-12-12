@@ -21,8 +21,8 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 7px !important;
-  height: 7px;
+  width: 10px !important;
+  height: 10px;
   border: 1px solid #d5d5d5 !important;
 }
 
@@ -32,7 +32,7 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 7px !important;
+  border-radius: 5px !important;
   background: #9c9b9b !important;
 }
 

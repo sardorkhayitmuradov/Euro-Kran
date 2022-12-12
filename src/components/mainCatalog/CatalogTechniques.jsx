@@ -81,7 +81,7 @@ const CatalogTechniques = () => {
             {allProduct?.map((el) => {
               return (
                 <div className="slider__card" key={el.id}>
-                  {/* <img src={el.img} alt={el.name} /> */}
+                  <img src={el.transport_images[0].images} alt={el.name} />
                   <div className="card__body">
                     <h2>{el.name}</h2>
                     <div className="slider__card__twink">

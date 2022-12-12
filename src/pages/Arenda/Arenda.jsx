@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../Arenda/Arenda.css";
-import MuiPagination from "../../pagination/MuiPagination";
 import MuiSlider from "../../MuiSlider";
 import { Dropdown } from "rsuite";
 import Box from "@mui/material/Box";
 import x from "../../assets/images/x-modal.svg";
 import Modal from "@mui/material/Modal";
+import { Context } from "../../ContextFetch/context";
 
 const Arenda = () => {
-  const [sliderdb, setSliderdb] = useState([]);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const { allProduct } = useContext(Context);
+  const [dataLoada, setDataLoada] = useState(6);
+  console.log(dataLoada);
 
   const style = {
     position: "absolute",
@@ -98,7 +100,6 @@ const Arenda = () => {
                 <h1>Парк техники</h1>
                 <div className="arenda__dropdown1">
                   <Dropdown
-                    defaultOpen="true"
                     className="rsuit__btn"
                     title="Мобильные краны Liebherr LTM"
                   >
@@ -166,19 +167,19 @@ const Arenda = () => {
               </div>
             </div>
             <div className="arenda__krans__parent">
-              {sliderdb?.map((el) => {
+              {allProduct?.slice(0, dataLoada).map((el) => {
                 return (
                   <div className="arenda__krans__card" key={el.id}>
-                    <img src={el.img} alt={el.name} />
+                    <img src={el.transport_images[0].images} alt={el.name} />
                     <div className="arenda__card__body">
                       <h2>{el.name}</h2>
                       <div className="arenda__card__twink">
                         <p>Грузоподъемность:</p>
-                        <p>{el.tonna}</p>
+                        <p>{el.ton}</p>
                       </div>
                       <div className="arenda__card__twink">
                         <p>Грузоподъемность:</p>
-                        <p>{el.metr}</p>
+                        <p>{el.arrow_length}</p>
                       </div>
                       <div className="arenda__card__twink arenda__twink__arrow">
                         <p style={{ fontWeight: "700" }}>Все характеристики</p>
@@ -190,7 +191,7 @@ const Arenda = () => {
                         </p>
                       </div>
                       <div className="arenda__card__btn">
-                        <button onClick={handleOpen}>{el.btn}</button>
+                        <button onClick={handleOpen}>Aрендовать</button>
                         <Modal
                           open={open}
                           aria-labelledby="modal-modal-title"
@@ -251,7 +252,16 @@ const Arenda = () => {
               })}
             </div>
           </div>
-          <MuiPagination setSliderdb={(p) => setSliderdb(p)} />
+        </div>
+        <div className="objects__btn">
+          <button
+            onClick={() => setDataLoada((defaultState) => defaultState + 3)}
+            style={{
+              display: dataLoada >= allProduct?.length ? "none" : null,
+            }}
+          >
+            Загрузить ещё
+          </button>
         </div>
       </div>
     </>
