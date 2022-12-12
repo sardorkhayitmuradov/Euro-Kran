@@ -32,6 +32,10 @@
        font-size: 127px;
 }
 
+.spec__tec__left img{
+  width: 100%;
+}
+
 .spec__tec__parent {
   height: 458px;
   display: flex;

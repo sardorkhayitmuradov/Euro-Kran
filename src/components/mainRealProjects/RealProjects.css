@@ -96,6 +96,11 @@
   .real__projects__back__text {
     display: none;
   }
+  .real__projects__container {
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
 }
 
 @media all and (max-width: 930px) {

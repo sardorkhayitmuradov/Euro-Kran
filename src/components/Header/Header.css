@@ -192,5 +192,18 @@
   }
   .header__container{
     padding: 0;
+    text-align: center;
+  }
+}
+
+
+@media all and (max-width: 427px) {
+  .header__nav1__ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+  .link_item5 a{
+    justify-content: center;
   }
 }

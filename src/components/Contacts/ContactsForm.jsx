@@ -22,8 +22,6 @@ const ContactsForm = () => {
     transform: "translate(-50%, -50%)",
     width: 620,
     height: 403,
-    // bgcolor: "transparent",
-    // backdropFilter: "blur(10px)",
     border: "none",
     boxShadow: "none",
     p: 10,

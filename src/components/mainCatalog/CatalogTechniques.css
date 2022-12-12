@@ -114,11 +114,11 @@
   color: #fcb427 !important;
 }
 
-/* .catalog__tech{
-  display: none;
-} */
-
 @media all and (max-width: 1425px) {
+  .catalog__tech__container {
+    width: 100%;
+    padding: 40px;
+  }
   .catalog__tech__container span {
     display: none;
   }
