@@ -136,14 +136,6 @@ const CatalogTechniques = () => {
                               type="email"
                               placeholder="Ваша почта"
                             />
-                            <div className="modal__form__checkbox">
-                              <input type="checkbox" />
-
-                              <label htmlFor="#">
-                                Я согласен с условиями обработки и использования
-                                моих персональных данных
-                              </label>
-                            </div>
                             <input
                               className="modal__form__btn"
                               type="submit"

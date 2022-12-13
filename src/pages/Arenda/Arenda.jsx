@@ -30,6 +30,9 @@ const Arenda = () => {
     textAlign: "center",
     paddingTop: "100px",
   };
+  if(!allProduct) {
+    return <h1>Loading...</h1>
+  }
   return (
     <>
       <div className="arenda">
@@ -229,14 +232,6 @@ const Arenda = () => {
                                 type="email"
                                 placeholder="Ваша почта"
                               />
-                              <div className="modal__form__checkbox">
-                                <input type="checkbox" />
-
-                                <label htmlFor="#">
-                                  Я согласен с условиями обработки и
-                                  использования моих персональных данных
-                                </label>
-                              </div>
                               <input
                                 className="modal__form__btn"
                                 type="submit"

@@ -187,9 +187,10 @@
   .slider__card {
     width: 100% !important;
     margin: 0 !important;
-    height: 590px;
+    height: 580px;
     background: #fff;
     font-family: "Montserrat";
+    padding-bottom: 20px;
   }
   .catalog__tech__container {
     width: 100%;
@@ -198,6 +199,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
+  }
+  .slider__card img {
+    width: 100% !important;
+    height: 240px;
+    object-fit: cover !important;
   }
 }
 

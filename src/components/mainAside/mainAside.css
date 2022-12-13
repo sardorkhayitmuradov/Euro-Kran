@@ -42,23 +42,6 @@
   resize: none;
 }
 
-.aside__form__check__div {
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.aside__form__check {
-  width: 20px;
-  height: 20px;
-
-  margin-right: 10px;
-}
-
-.aside__form__check__div label {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 400;
-}
 
 .aside__form__btn {
   width: 490px;
@@ -82,7 +65,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 33px;
-  line-height: 142.19%;
+  line-height: 150.19%;
 
   color: #ffffff;
 }
