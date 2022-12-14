@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./ContactsForm.css";
 import clock from "../../assets/images/contact-clock.svg";
 import emailImg from "../../assets/images/email.svg";
@@ -8,28 +8,13 @@ import file from "../../assets/images/file.svg";
 import Box from "@mui/material/Box";
 import x from "../../assets/images/x-modal.svg";
 import Modal from "@mui/material/Modal";
-import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+import { Context } from "../../ContextFetch/context";
 
 const ContactsForm = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
+  const { Contacts, open, setOpen } = useContext(Context);
+
   const handleClose = () => setOpen(false);
-
-  //post contacts start
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  //post contacts end
-
-  //notificates
-  const notError = () => toast("Oops! Something get wrong...",{
-    style: {
-      background:"#fcb427",
-      color:"#fff"
-    },
-  });
 
   const style = {
     position: "absolute",
@@ -44,34 +29,7 @@ const ContactsForm = () => {
     textAlign: "center",
     paddingTop: "100px",
   };
-  
-  const Contacts = () => {
-    axios
-      .post(
-        "https://begzodadmin.pythonanywhere.com/applications-api/create-app/",
-        {
-          name: name,
-          email: email,
-          number: phone,
-          sms: message,
-        }
-      )
-      .then((res) => {
-        if (res.status === 201) {
-          handleOpen();
-        }
-        if (res.status !== 201) {
-         notError()
-        }
-      })
-      .catch(() => {
-        notError()
-      });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
-  };
+
   return (
     <>
       <div className="contacts">
@@ -126,49 +84,33 @@ const ContactsForm = () => {
               </div>
             </div>
             <div className="about__contacts__right">
-              <form action="#">
-                <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="input1"
-                  type="text"
-                  placeholder="Имя"
-                />
+              <form onSubmit={Contacts}>
+                <input className="input1" type="text" placeholder="Имя" />
                 <div className="right__email__tel">
                   <input
                     className="input2"
                     type="email"
                     placeholder="E-mail"
-                    value={email}
                     required
-                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <input
                     className="input3"
                     type="text"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
                     placeholder="Телефон"
                     required
                   />
                 </div>
                 <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
                   name="message"
                   className="input4"
                   placeholder="Сообщение"
                 ></textarea>
                 <input
                   className="input__btn"
-                  disabled={!phone}
-                  type="button"
+                  type="submit"
                   value={"Оставить заявку"}
-                  onClick={() => {
-                    Contacts();
-                  }}
                 />
-                <Toaster/>
+                <Toaster />
               </form>
               <Modal
                 open={open}
@@ -179,7 +121,10 @@ const ContactsForm = () => {
                 <Box sx={style} className="contact__modal">
                   <img
                     className="modal__closer"
-                    onClick={handleClose}
+                    onClick={() => {
+                      handleClose()
+                      window.location.reload()
+                    }}
                     src={x}
                     alt="X-modal"
                   />

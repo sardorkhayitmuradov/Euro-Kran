@@ -24,7 +24,7 @@ function App() {
       <Route path='/pageblog/:id' element={<PageBlogs/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/catalog' element={<Catalog/>}/>
-      <Route path='/allproducts' element={<AllProducts/>}/>
+      <Route path='/allproducts/:id' element={<AllProducts/>}/>
     </Routes>
     </BrowserRouter>
     </>

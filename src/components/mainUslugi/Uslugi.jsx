@@ -14,7 +14,7 @@ const Uslugi = () => {
           <div className="uslugi__parent">
             {uslugi?.map((el) => {
               return (
-                <Link to={"/allproducts"} key={el.id} className="uslugi__card">
+                <Link to={`/allproducts/${el.id}`} key={el.id} className="uslugi__card">
                   <img src={el.image} alt={el.title} />
                   <p>{el.title}</p>
                 </Link>

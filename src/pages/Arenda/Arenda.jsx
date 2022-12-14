@@ -8,12 +8,13 @@ import Modal from "@mui/material/Modal";
 import { Context } from "../../ContextFetch/context";
 
 const Arenda = () => {
+  const { allProduct } = useContext(Context);
+  const [dataLoada, setDataLoada] = useState(6);
+  const { Order } = useContext(Context);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const { allProduct } = useContext(Context);
-  const [dataLoada, setDataLoada] = useState(6);
-  console.log(dataLoada);
+  const [id, setId] = useState();
 
   const style = {
     position: "absolute",
@@ -30,8 +31,8 @@ const Arenda = () => {
     textAlign: "center",
     paddingTop: "100px",
   };
-  if(!allProduct) {
-    return <h1>Loading...</h1>
+  if (!allProduct) {
+    return <h1>Loading...</h1>;
   }
   return (
     <>
@@ -194,7 +195,14 @@ const Arenda = () => {
                         </p>
                       </div>
                       <div className="arenda__card__btn">
-                        <button onClick={handleOpen}>Aрендовать</button>
+                        <button
+                          onClick={() => {
+                            handleOpen();
+                            setId(el.id);
+                          }}
+                        >
+                          Aрендовать
+                        </button>
                         <Modal
                           open={open}
                           aria-labelledby="modal-modal-title"
@@ -215,7 +223,15 @@ const Arenda = () => {
                               Оставьте заявку на звонок и мы ответим на все ваши
                               вопросы в самое ближайшее время
                             </p>
-                            <form action="#" className="arenda__modal__form">
+                            <form
+                              onSubmit={(event) => Order(event, id)}
+                              className="arenda__modal__form"
+                            >
+                              <input
+                                className="modal__form"
+                                type="email"
+                                placeholder="Ваша почта"
+                              />
                               <input
                                 className="modal__form"
                                 type="text"
@@ -227,11 +243,7 @@ const Arenda = () => {
                                 placeholder="Ваш телефон*"
                                 required
                               />
-                              <input
-                                className="modal__form"
-                                type="email"
-                                placeholder="Ваша почта"
-                              />
+
                               <input
                                 className="modal__form__btn"
                                 type="submit"

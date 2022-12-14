@@ -1,32 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "../mainAside/mainAside.css";
 import kran from "../../assets/images/aside-kran.png";
-import axios from "axios";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import Box from "@mui/material/Box";
 import x from "../../assets/images/x-modal.svg";
 import Modal from "@mui/material/Modal";
+import { Context } from "../../ContextFetch/context";
 
 const MainAside = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
+  
+  const { Contacts, open, setOpen } = useContext(Context);
   const handleClose = () => setOpen(false);
-  //post contacts start
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  //post contacts end
-
-  //notificates
-  const notError = () =>
-    toast("Oops! Something get wrong, Please again...", {
-      style: {
-        background: "#fcb427",
-        color: "#fff",
-      },
-    });
-
     //modal styles 
     const style = {
       position: "absolute",
@@ -42,34 +26,6 @@ const MainAside = () => {
       paddingTop: "70px",
     };
 
-
-  const Contacts = () => {
-    axios
-      .post(
-        "https://begzodadmin.pythonanywhere.com/applications-api/create-app/",
-        {
-          name: name,
-          email: email,
-          number: phone,
-          sms: message,
-        }
-      )
-      .then((res) => {
-        if (res.status === 201) {
-          handleOpen();
-        }
-        if (res.status !== 201) {
-          notError();
-        }
-      })
-      .catch(() => {
-        notError();
-      });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
-  };
   return (
     <>
       <aside className="main__aside">
@@ -81,45 +37,31 @@ const MainAside = () => {
                 Оставьте заявку на звонок и мы ответим на все ваши вопросы в
                 самое ближайшее время
               </p>
-              <form className="aside__form">
+              <form className="aside__form" onSubmit={Contacts}>
                 <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                   className="aside__form__input"
                   type="text"
                   placeholder="Ваше имя"
                 />
+                   <input
+                  className="aside__form__input"
+                  type="email"
+                  placeholder="Ваша почта"
+                />
                 <input
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
                   className="aside__form__input"
                   type="tel"
                   placeholder="Ваш телефон*"
                   required
-                  disabled={!name}
-                />
-                <input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="aside__form__input"
-                  type="email"
-                  placeholder="Ваша почта"
-                  disabled={!phone}
                 />
                 <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
                   className="aside__form__input"
                   placeholder="Оставьте ваш вопрос"
                 ></textarea>
                 <input
-                  onClick={() => {
-                    Contacts();
-                  }}
                   className="aside__form__btn"
                   type="submit"
                   value="Заказать звонок"
-                  disabled={!email}
                 />
                 <Toaster />
               </form>
@@ -132,7 +74,10 @@ const MainAside = () => {
                 <Box sx={style} className="contact__modal">
                   <img
                     className="modal__closer"
-                    onClick={handleClose}
+                    onClick={() => {
+                      handleClose()
+                      window.location.reload()
+                    }}
                     src={x}
                     alt="X-modal"
                   />
