@@ -1,7 +1,7 @@
 import React from "react";
 import "../mainSpecTech/SpecTech.css";
 import kran from "../../assets/images/specTech.png";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const SpecTech = () => {
   return (
@@ -26,10 +26,10 @@ const SpecTech = () => {
                 упрощает погрузку - выгрузку материалов, оптимизирует рабочий
                 процесс.
               </p>
-              <Link>
+              <HashLink smooth to={"/#cat-tech"}>
                 {" "}
                 <button>Выбрать спецтехнику</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>

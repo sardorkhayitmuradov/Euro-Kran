@@ -73,7 +73,7 @@ const CatalogTechniques = () => {
     <>
       <section className="catalog__tech">
         <div className="catalog__tech__container">
-          <h1 className="catalog__tech__label">Каталог техники</h1>
+          <h1 className="catalog__tech__label" id="cat-tech">Каталог техники</h1>
           <span>{"←   →"}</span>
         </div>
         <div className="catalog__tech__slider">

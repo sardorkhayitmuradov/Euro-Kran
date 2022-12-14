@@ -3,6 +3,55 @@
   margin: 0 auto;
   font-family: "Montserrat";
   padding: 60px 0;
+  color: #2d2d2d;
+}
+
+.about__contacts__parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 110px;
+}
+
+.contacts__geo {
+  display: flex;
+  gap: 20px;
+}
+
+.contacts__icons {
+  padding-top: 25px;
+}
+
+.contacts__phones {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contacts__phones img {
+  width: 25px;
+  height: 25px;
+}
+
+.contacts__icons {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.contacts__email {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+.numbers p {
+  padding: 3px 0;
+}
+
+.contacts__clock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .contacts__labels h5 {
@@ -10,6 +59,40 @@
   color: #898989;
   font-size: 12px;
   font-weight: 400;
+}
+
+.about__contacts__right .input1 {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2d2d2d;
+  font-family: 'Montserrat';
+}
+
+.right__email__tel input {
+  width: 49%;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.right__email__tel .input3 {
+  margin-left: 10px;
+  padding-left: 20px;
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
 }
 
 .contacts__labels h5 span {
@@ -22,6 +105,37 @@
   font-size: 35px;
   color: #2d2d2d;
   padding: 60px 0;
+}
+
+.input4 {
+  width: 100%;
+  height: 139px;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #f9f9f9;
+  border: 1px solid #b0b0b0;
+  font-family: 'Montserrat';
+}
+
+.input4:focus {
+  outline: 2px solid #ffbf1d;
+  border: none;
+}
+
+.input__btn{
+  width: 100%;
+  height: 50px;
+  background: #ffbf1d;
+  border: 2px solid #ffbf1d;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-top: 10px;
+  font-family: 'Montserrat';
 }
 
 .contacts__form__how h4 {

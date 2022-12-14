@@ -7,7 +7,7 @@ import { Context } from "../../ContextFetch/context";
 
 const Blog = () => {
   const [more, setMore] = useState(9);
-  const {blog} = useContext(Context);
+  const { blog } = useContext(Context);
 
   return (
     <>
@@ -27,7 +27,7 @@ const Blog = () => {
                   <img src={el.article_images[0].images} alt={el.title} />
                   <div className="blog__body">
                     <h3>{el.title}</h3>
-                    <p>{el.desc.slice(0,150)}...</p>
+                    <p>{el.desc.slice(0, 150)}...</p>
                     <Link to={`/pageblog/${el.id}`}>
                       <button>Подробнее</button>
                     </Link>

@@ -76,7 +76,6 @@ const ContextProvider = ({ children }) => {
           uslugi,
           objects,
           blog,
-          
         }}
       >
         {children}

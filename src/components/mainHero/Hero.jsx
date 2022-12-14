@@ -1,8 +1,10 @@
 import React from "react";
 import "../mainHero/Hero.css";
 import { HashLink } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="hero">
@@ -23,7 +25,7 @@ const Hero = () => {
                 <HashLink smooth to="#order_call">
                   <button className="hero__btn1">Заказать звонок</button>
                 </HashLink>
-                <button className="hero__btn2">Каталог техники</button>
+                <button className="hero__btn2" onClick={() => navigate("/catalog")}>Каталог техники</button>
               </div>
             </div>
             <div className="hero__right">

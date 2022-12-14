@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Contacts/ContactsForm.css";
+import "./ContactsForm.css";
 import clock from "../../assets/images/contact-clock.svg";
 import emailImg from "../../assets/images/email.svg";
 import geo from "../../assets/images/geo.svg";

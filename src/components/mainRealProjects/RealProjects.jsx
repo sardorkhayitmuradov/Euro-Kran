@@ -6,6 +6,7 @@ import darkKran1 from "../../assets/images/dark-kran1.png";
 import darkKran2 from "../../assets/images/dark-kran2.png";
 import location from "../../assets/images/location.svg";
 import {Link} from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 const RealProjects = () => {
   return (
@@ -49,9 +50,9 @@ const RealProjects = () => {
           </p>
           <br />
           <br />
-          <Link className="real__projects__right__link">
+          <HashLink smooth to="/blog" className="real__projects__right__link">
           Подробнее <span> {"→"}</span>
-          </Link>
+          </HashLink>
           <h1 className="real__projects__back__text">Eurocran</h1>
         </div>
       </div>

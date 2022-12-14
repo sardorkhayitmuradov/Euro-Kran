@@ -1,6 +1,5 @@
 import React from "react";
 import Clients from "../../components/AboutClients/Clients";
-import Contacts from "../../components/aboutContacts/Contacts";
 import EuroKran from "../../components/aboutEuroKran/EuroKran";
 import Facts from "../../components/aboutFacts/Facts";
 import Zagolovok from "../../components/aboutZagolovok/Zagolovok";
@@ -18,7 +17,6 @@ const About = () => {
       <Clients />
       <Facts />
       <Zagolovok />
-      <Contacts />
       <Iframe />
       <Footer />
     </>
