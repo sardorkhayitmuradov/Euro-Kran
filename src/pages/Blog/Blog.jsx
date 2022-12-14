@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/Header/Header";
 import "../Blog/Blog.css";
-import { blog } from "../../blogdb";
 import { Link } from "react-router-dom";
+import { Context } from "../../ContextFetch/context";
 
 const Blog = () => {
   const [more, setMore] = useState(9);
+  const {blog} = useContext(Context);
 
   return (
     <>
@@ -23,12 +24,12 @@ const Blog = () => {
             {blog?.slice(0, more).map((el) => {
               return (
                 <div className="blog__card" key={el.id}>
-                  <img src={el.img} alt={el.title} />
+                  <img src={el.article_images[0].images} alt={el.title} />
                   <div className="blog__body">
                     <h3>{el.title}</h3>
-                    <p>{el.desc}</p>
-                    <Link to="/pageblog">
-                      <button>{el.btn}</button>
+                    <p>{el.desc.slice(0,150)}...</p>
+                    <Link to={`/pageblog/${el.id}`}>
+                      <button>Подробнее</button>
                     </Link>
                   </div>
                 </div>
@@ -38,7 +39,7 @@ const Blog = () => {
           <div className="objects__btn">
             <button
               onClick={() => setMore((defaultState) => defaultState + 3)}
-              style={{ display: more === blog.length ? "none" : null }}
+              style={{ display: more >= blog.length ? "none" : null }}
             >
               Загрузить ещё
             </button>

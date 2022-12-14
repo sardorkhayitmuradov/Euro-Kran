@@ -67,7 +67,7 @@ const CatalogTechniques = () => {
     boxShadow: "none",
     p: 15,
     textAlign: "center",
-    paddingTop: "100px",
+    paddingTop: "80px",
   };
   return (
     <>
@@ -135,6 +135,11 @@ const CatalogTechniques = () => {
                               className="modal__form"
                               type="email"
                               placeholder="Ваша почта"
+                            />
+                            <input
+                              className="modal__form"
+                              type="text"
+                              placeholder="Ваша сообщение"
                             />
                             <input
                               className="modal__form__btn"

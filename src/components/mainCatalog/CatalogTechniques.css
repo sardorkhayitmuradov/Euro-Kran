@@ -22,10 +22,6 @@
   padding: 40px;
 }
 
-.catalog__tech__slider {
-  cursor: pointer;
-  padding: 0px;
-}
 
 .catalog__tech__container span {
   border: 2px solid #fcb427;
@@ -100,6 +96,7 @@
   border: 2px solid #fcb427;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 .slider__card__btn button:active {
   background: #fff;

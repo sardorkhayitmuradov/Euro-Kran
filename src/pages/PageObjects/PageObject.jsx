@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/Header/Header";
 import "../PageObjects/PageObject.css";
-import { objects } from "../../objectsDb";
 import { useNavigate } from "react-router-dom";
-import people from "../../assets/params/people.png";
-import red from '../../assets/params/red-gruz.png';
-import gumbaz from '../../assets/params/gumbaz.png';
-import box from '../../assets/params/box.png';
-import kalakolcik from '../../assets/params/kalakolcik.png';
-import tower from '../../assets/params/tower.png';
-import gum from '../../assets/params/gum.png';
+import { Context } from "../../ContextFetch/context";
+import { useParams } from "react-router-dom";
 
 const PageObject = () => {
   const navigate = useNavigate();
+  const {objects} = useContext(Context);
+  const {id} = useParams()
+  
+  const paramsFind = objects.find((el) => {
+    return el.id === +id;
+  })
   return (
     <>
       <Header />
@@ -24,22 +24,19 @@ const PageObject = () => {
           </h5>
           <div className="objects__params">
             <h1 className="objects__label">
-              Разгрузка и монтаж трансформатора
+             {paramsFind?.title}
             </h1>
             <p className="page__object__p">
-              Разгрузка и монтаж трансформатора ТРДН 80000-110 весом 90т на
-              объекте: НПЗ, г.Туапсе Работу выполняет автокран LIEBHERR
-              LTM1500грузоподъемностью 500т.
+             {paramsFind?.desc}
             </p>
             <div className="page__object__params__parent">
-              <img src={people} alt="People" />
+              <img src={paramsFind?.object_images[0].images} alt={paramsFind?.title} />
               <div className="small__params__images">
-                     <img src={red} alt="Red-gruz" />
-                     <img src={gumbaz} alt="Gumbaz" />
-                     <img src={box} alt="Box" />
-                     <img src={kalakolcik} alt="Kalakolchik" />
-                     <img src={tower} alt="Tower" />
-                     <img src={gum} alt="Blue-gumbaz" />
+                     {paramsFind?.object_images.map((el) => {
+                      return(
+                        <img src={el.images} alt="" />
+                      )
+                     })}
               </div>
             </div>
           </div>
@@ -94,25 +91,9 @@ const PageObject = () => {
               Результирующая грузоподъемность в этом случае может быть увеличена
               до 370 %. <br /> <br />
             </p>
-          </div>
-        </div>
-      </div>
-      <div className="objects">
-        <div className="objects__container">
-          <h1 className="objects__label">Другие объекты</h1>
-          <div className="objects__db">
-            {objects?.slice(0, 3).map((el) => {
-              return (
-                <div className="objects__card" key={el.id}>
-                  <img src={el.img} alt={el.title} />
-                  <h3>{el.title}</h3>
-                  <h4>{el.city}</h4>
-                </div>
-              );
-            })}
-          </div>
-          <div className="objects__btn">
-            <button onClick={() => navigate("/objects")}>Смотреть все</button>
+            <div className="btn__back">
+              <button onClick={() => navigate("/objects")} className="back__btn">Back</button>
+            </div>
           </div>
         </div>
       </div>

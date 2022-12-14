@@ -8,6 +8,7 @@
 
 .page__object__params__parent img {
        width: 100%;
+       height: fit-content;
 }
 
 .small__params__images{
@@ -19,5 +20,28 @@
 
 .small__params__images img {
        width: 100%;
-       object-fit: cover;
+       height: 200px;
+}
+
+
+.btn__back{
+       display: flex;
+       justify-content: end;
+       padding: 40px 0;
+}
+
+
+.back__btn {
+       width: 209px;
+       height: 50px;
+       background: #fcb427;
+       border: 2px solid #fcb427;
+       color: #fff;
+       font-size: 18px;
+       font-weight: 700;
+}
+
+.back__btn:hover{
+       background: #fff;
+       color: #fcb427;
 }

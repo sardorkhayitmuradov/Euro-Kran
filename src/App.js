@@ -8,6 +8,7 @@ import Blog from './pages/Blog/Blog';
 import PageBlogs from './pages/PageBlogs/PageBlogs';
 import Contacts from './pages/Contacts/Contacts';
 import Catalog from './pages/Catalog/Catalog';
+import AllProducts from './pages/allProducts/AllProducts';
 
 
 function App() {
@@ -18,11 +19,12 @@ function App() {
       <Route path='/' element={<Main/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/objects' element={<Objects/>}/>
-      <Route path="/pageobject" element={<PageObject/>}/>
+      <Route path="/pageobject/:id" element={<PageObject/>}/>
       <Route path='/blog' element={<Blog/>}/>
-      <Route path='/pageblog' element={<PageBlogs/>}/>
+      <Route path='/pageblog/:id' element={<PageBlogs/>}/>
       <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/catalog' element={<Catalog/>}/>
+      <Route path='/allproducts' element={<AllProducts/>}/>
     </Routes>
     </BrowserRouter>
     </>

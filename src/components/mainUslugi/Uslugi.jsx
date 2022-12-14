@@ -1,20 +1,23 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Uslugi.css";
-import { uslugi } from "../../dbsUslugi";
+// import { uslugi } from "../../dbsUslugi";
+import { Context } from "../../ContextFetch/context";
+import { Link } from "react-router-dom";
 
 const Uslugi = () => {
+  const {uslugi} = useContext(Context);
   return (
     <>
       <section className="uslugi__sect">
         <div className="uslugi__container" id="uslugi">
           <h1 className="uslugi__label">Услуги</h1>
           <div className="uslugi__parent">
-            {uslugi.map((el) => {
+            {uslugi?.map((el) => {
               return (
-                <div key={el.id} className="uslugi__card">
-                  <img src={el.img} alt={el.title} />
+                <Link to={"/allproducts"} key={el.id} className="uslugi__card">
+                  <img src={el.image} alt={el.title} />
                   <p>{el.title}</p>
-                </div>
+                </Link>
               );
             })}
           </div>

@@ -12,6 +12,15 @@
   padding: 100px 0;
   font-family: "Montserrat";
 }
+
+.page__blogs__imgs img{
+       width: 100%;
+       height: 350px;
+
+       object-fit: cover;
+}
+
+
 .page__blogs__container h5 {
   padding-bottom: 30px;
   font-weight: 400;

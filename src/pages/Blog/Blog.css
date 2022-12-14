@@ -18,7 +18,8 @@
 
 .blog__card img {
        width: 100%;
-       height: max-content;
+       height: 320px;
+       object-fit: cover;
 }
 
 .blog__body{
@@ -26,7 +27,7 @@
 }
 
 .blog__body p {
-       min-height: 150px;
+       min-height: 180px;
 
        padding: 20px 0;
        font-weight: 400;

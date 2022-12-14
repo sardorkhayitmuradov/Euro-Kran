@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Objects/CompanyObjects.css";
-import { objects } from "../../objectsDb";
 import { Link } from "react-router-dom";
+import { Context } from "../../ContextFetch/context";
 
 const CompanyObjects = () => {
-  const [dataLoad, setDataLoad] = React.useState(9);
+  const [dataLoad, setDataLoad] = React.useState(3);
+  const {objects} = useContext(Context);
 
   return (
     <>
@@ -19,10 +20,9 @@ const CompanyObjects = () => {
           <div className="objects__db">
             {objects?.slice(0, dataLoad).map((el) => {
               return (
-                <Link to={"/pageobject"} className="objects__card" key={el.id}>
-                  <img src={el.img} alt={el.title} />
+                <Link to={`/pageobject/${el.id}`} className="objects__card" key={el.id}>
+                  <img src={el.object_images[0].images} alt={el.title} />
                   <h3>{el.title}</h3>
-                  <h4>{el.city}</h4>
                 </Link>
               );
             })}
@@ -30,7 +30,7 @@ const CompanyObjects = () => {
           <div className="objects__btn">
             <button
               onClick={() => setDataLoad((defaultState) => defaultState + 6)}
-              style={{display: dataLoad === objects.length ? "none" :  null}}
+              style={{display: dataLoad >= objects.length ? "none" :  null}}
 
             >
               Загрузить ещё

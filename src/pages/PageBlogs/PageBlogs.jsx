@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/Header/Header";
 import Iframe from "../../components/Iframe/Iframe";
 import "../PageBlogs/PageBlogs.css";
-import blogKran from "../../assets/images/blog-kran.png";
-import blogYellow from "../../assets/images/blog-yellow.png";
+import { useNavigate, useParams } from "react-router-dom";
+import { Context } from "../../ContextFetch/context";
 
 
 const PageBlogs = () => {
+  const navigate = useNavigate()
+  const {blog} = useContext(Context);
+  const {id} = useParams()
+
+  const blogFind = blog?.find((el) => {
+    return el.id === +id;
+  })
   return (
     <>
       <Header />
@@ -16,20 +23,16 @@ const PageBlogs = () => {
           <h5>
             <span>Главная -</span> Статьи
           </h5>
-          <h1>Аренда автокрана Liebherr ltm 1160</h1>
+          <h1>{blogFind?.title}</h1>
           <p>
-            Компания liebherr – ведущий поставщик строительной и землеройной
-            техники в мире. Кроме тяжелых гусеничных экскаваторов производитель
-            предлагает автомобильные краны от легкой до тяжелой категории.
-            Каждая машина демонстрирует отличные параметры при эксплуатации в
-            тяжелых условиях и проведении серьезных работ. Спрос на автокраны
-            немецкого производителя огромный. Однако не все компании имеют
-            достаточно средств на покупку такой машины. Отличное решение –
-            аренда автокрана 160 тонн.{" "}
+           {blogFind?.desc}
           </p>
           <div className="page__blogs__imgs">
-            <img src={blogYellow} alt="Yellow-gruz" />
-            <img src={blogKran} alt="Kran" />
+            {blogFind?.article_images.map((el) => {
+             return(
+              <img src={el.images} alt="Foto" />
+             )
+            })}
           </div>
           <div className="page__blogs__contents">
             <h1>Условия аренды автокранов liebherr ltm 1160</h1>
@@ -103,6 +106,9 @@ const PageBlogs = () => {
               всем интересующим вопросам вас проконсультируют сотрудники, а
               также помогут с выбором транспорта.
             </p>
+            <div className="btn__back">
+              <button onClick={() => navigate("/blog")} className="back__btn">Back</button>
+            </div>
           </div>
         </div>
       </div>
