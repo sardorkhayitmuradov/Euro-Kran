@@ -9,6 +9,7 @@ import PageBlogs from './pages/PageBlogs/PageBlogs';
 import Contacts from './pages/Contacts/Contacts';
 import Catalog from './pages/Catalog/Catalog';
 import AllProducts from './pages/allProducts/AllProducts';
+import Characters from './pages/Characters/Characters';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/catalog' element={<Catalog/>}/>
       <Route path='/allproducts/:id' element={<AllProducts/>}/>
+      <Route path='/characters/:id' element={<Characters/>}/>
     </Routes>
     </BrowserRouter>
     </>

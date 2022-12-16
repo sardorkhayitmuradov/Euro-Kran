@@ -1,0 +1,55 @@
+.params {
+       width: 100%;
+       height: max-content;
+       padding-top: 100px;
+       background: #e5e5e5;
+}
+
+.params__container{
+       width: 1180px;
+       margin: auto;
+       font-family: 'Montserrat';
+}
+
+.arenda__labels p {
+       color: #2d2d2d;
+       font-size: 15px;
+       line-height: 25px;
+       font-weight: 400;
+}
+
+.params__parent{
+       padding-top: 60px;
+}
+
+.params__imgs{
+       display: flex;
+       gap: 40px;
+}
+
+.params__imgs img {
+       width: 100%;
+       height: 400px;
+       
+       object-fit: fill;
+}
+
+
+.params__desc h1 {
+       font-size: 44px;
+       color: #2d2d2d;
+       font-weight: 700;
+       padding: 60px 0;
+}
+
+.params__desc p {
+       color: #2d2d2d;
+       font-size: 15px;
+       line-height: 25px;
+       font-weight: 400;
+}
+
+
+.params__desc{
+       padding: 60px 0;
+}

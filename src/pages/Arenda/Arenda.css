@@ -74,11 +74,17 @@
 }
 
 .arenda__card__twink {
+  height: 30px;
   padding-top: 15px;
   display: flex;
-  gap: 40px;
-  transition: 0.5s ease;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
+  color: #2d2d2d;
+}
+
+.span__twink{
+  display: flex;
 }
 
 .arenda__card__btn button {

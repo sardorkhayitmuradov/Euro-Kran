@@ -8,12 +8,12 @@ import { useParams } from "react-router-dom";
 
 const PageObject = () => {
   const navigate = useNavigate();
-  const {objects} = useContext(Context);
-  const {id} = useParams()
-  
+  const { objects } = useContext(Context);
+  const { id } = useParams();
+
   const paramsFind = objects.find((el) => {
     return el.id === +id;
-  })
+  });
   return (
     <>
       <Header />
@@ -23,20 +23,17 @@ const PageObject = () => {
             Главная - <span>Объекты</span>
           </h5>
           <div className="objects__params">
-            <h1 className="objects__label">
-             {paramsFind?.title}
-            </h1>
-            <p className="page__object__p">
-             {paramsFind?.desc}
-            </p>
+            <h1 className="objects__label">{paramsFind?.title}</h1>
+            <p className="page__object__p">{paramsFind?.desc}</p>
             <div className="page__object__params__parent">
-              <img src={paramsFind?.object_images[0].images} alt={paramsFind?.title} />
+              <img
+                src={paramsFind?.object_images[0].images}
+                alt={paramsFind?.title}
+              />
               <div className="small__params__images">
-                     {paramsFind?.object_images.map((el) => {
-                      return(
-                        <img src={el.images} alt="" />
-                      )
-                     })}
+                {paramsFind?.object_images.map((el) => {
+                  return <img src={el.images} alt="" />;
+                })}
               </div>
             </div>
           </div>
@@ -92,7 +89,12 @@ const PageObject = () => {
               до 370 %. <br /> <br />
             </p>
             <div className="btn__back">
-              <button onClick={() => navigate("/objects")} className="back__btn">Back</button>
+              <button
+                onClick={() => navigate("/objects")}
+                className="back__btn"
+              >
+                Back
+              </button>
             </div>
           </div>
         </div>

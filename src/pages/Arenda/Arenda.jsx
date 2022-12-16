@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import x from "../../assets/images/x-modal.svg";
 import Modal from "@mui/material/Modal";
 import { Context } from "../../ContextFetch/context";
+import { Link } from "react-router-dom";
 
 const Arenda = () => {
   const { allProduct } = useContext(Context);
@@ -179,21 +180,24 @@ const Arenda = () => {
                       <h2>{el.name}</h2>
                       <div className="arenda__card__twink">
                         <p>Грузоподъемность:</p>
+                        <div className="span__twink">
                         <p>{el.ton}</p>
+                        <p style={{paddingLeft:"3px"}}>{" тонн"}</p>
+                        </div>
                       </div>
                       <div className="arenda__card__twink">
-                        <p>Грузоподъемность:</p>
-                        <p>{el.arrow_length}</p>
+                        <p>Длина стрелы:</p>
+                        <p>{el.arrow_length}{" м"}</p>
                       </div>
-                      <div className="arenda__card__twink arenda__twink__arrow">
+                      <Link to={`/characters/${el.id}`} className="arenda__card__twink arenda__twink__arrow">
                         <p style={{ fontWeight: "700" }}>Все характеристики</p>
                         <p
                           className="arenda__arrow"
-                          style={{ color: "#FFBF1D80" }}
+                          style={{ color: "#FCB427" }}
                         >
                           {"→"}
                         </p>
-                      </div>
+                      </Link>
                       <div className="arenda__card__btn">
                         <button
                           onClick={() => {
