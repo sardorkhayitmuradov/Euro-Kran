@@ -28,9 +28,9 @@ const PageBlogs = () => {
            {blogFind?.desc}
           </p>
           <div className="page__blogs__imgs">
-            {blogFind?.article_images.map((el) => {
+            {blogFind?.article_images.map((el,index) => {
              return(
-              <img src={el.images} alt="Foto" />
+              <img src={el.images} alt="Foto" key={index} />
              )
             })}
           </div>

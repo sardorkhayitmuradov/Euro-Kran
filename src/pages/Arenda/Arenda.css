@@ -104,7 +104,13 @@
   color: #fcb427;
 }
 
+.arenda__parent{
+  width: 100%;
+  max-width: 300px;
+}
+
 .arenda__filter1 {
+  width: 275px;
   height: max-content;
 
   background: #fff;
@@ -246,4 +252,11 @@ input[type="checkbox"] {
 .modal__form__btn:hover{
   color: #fcb427;
   background: #fff;
+}
+
+
+.nothing{
+  width: 300px;
+  margin-top: 300px !important;
+  margin-left: 350px !important;
 }

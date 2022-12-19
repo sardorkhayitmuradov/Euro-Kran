@@ -130,11 +130,25 @@ const ContextProvider = ({ children }) => {
       });
   };
 
+  const filter = async ({
+    id = "",
+    mintonn = "",
+    maxtonn = "",
+    minmeter = "",
+    maxmeter = "",
+  }) =>
+    await axios
+      .get(
+        `https://begzodadmin.pythonanywhere.com/products-api/product/?category=${id}&ton__gt=${mintonn}&ton__lt=${maxtonn}&arrow__gt=${minmeter}&arrow__lt=${maxmeter}`
+      )
+      .then((res) => setAllProduct(res.data));
+
   return (
     <div>
       <Context.Provider
         value={{
           allProduct,
+          setAllProduct,
           uslugi,
           objects,
           blog,
@@ -142,6 +156,7 @@ const ContextProvider = ({ children }) => {
           open,
           setOpen,
           Order,
+          filter,
         }}
       >
         {children}

@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import x from "../../assets/images/x-modal.svg";
 import Modal from "@mui/material/Modal";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const CatalogTechniques = () => {
   const [open, setOpen] = useState(false);
@@ -86,16 +87,16 @@ const CatalogTechniques = () => {
                     <h2>{el.name}</h2>
                     <div className="slider__card__twink">
                       <p>Грузоподъемность:</p>
-                      <p>{el.ton}</p>
+                      <p>{el.ton}{" тонн"}</p>
                     </div>
                     <div className="slider__card__twink">
                       <p>Грузоподъемность:</p>
-                      <p>{el.arrow_length}</p>
+                      <p>{el.arrow_length}{" м"}</p>
                     </div>
-                    <div className="slider__card__twink">
+                    <Link to={`/characters/${el.id}`} className="slider__card__twink">
                       <p style={{ fontWeight: "700" }}>Все характеристики</p>
                       <p style={{ color: "#FFBF1D80" }}>{"→"}</p>
-                    </div>
+                    </Link>
                     <div className="slider__card__btn">
                       {" "}
                       <button onClick={handleOpen}>Aрендовать</button>
